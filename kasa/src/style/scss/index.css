@@ -4,6 +4,9 @@
 }
 
 .home-container header {
+  right: 25%;
+  transform: translateX(21%);
+  width: 1240px;
   display: flex;
   justify-content: space-between;
   align-items: center;
