@@ -1,38 +1,40 @@
 @import "../components/_settings";
 
-.home-container {
-    margin: 2rem 4rem;
-    header {
-        right:25%;
-        transform:translateX(21%);
-        width: 1240px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        img {
-            width: 210.322px;
-            height: 68px;
-        }
-    }
 
-    nav {
+.header-container {
+    header {
+      margin: 2rem 6rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  
+      img {
+        width: 210.322px;
+        height: 68px;
+      }
+  
+      nav {
         display: flex;
         gap: 2rem;
+  
         a {
-            color: $pink;
-            text-align: right;
-            font-family: "Montserrat", sans-serif;
-            font-size: 24px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 142.6%;
-            text-decoration-line: underline;
+          color: $pink;
+          text-align: right;
+          font-family: "Montserrat", sans-serif;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 142.6%;
+          text-decoration-line: underline;
         }
+      }
     }
-    .bg-container {
-        width: 1240px;
-        height: 223px;
-        position:absolute;
+  }
+
+.bg-container {
+  width: 1240px;
+  height: 223px;
+        position:relative;
         left:50%;
         transform:translateX(-50%);
         margin-top:2rem;
@@ -41,4 +43,15 @@
             height:100%;
         }
     }
-}
+
+    .cards-container {
+      display: flex;
+      flex-wrap: wrap; 
+      // gap: 2.5rem;
+      justify-content: flex-start;
+        margin: 2rem 6rem;
+        width: 1340px;
+        height: 829px;
+        border-radius: 25px;
+        background: #F6F6F6;
+    }
