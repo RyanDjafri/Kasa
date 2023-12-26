@@ -7,7 +7,6 @@ import Card from "../components/Card";
 
 const Home = () => {
   const [locations, setLocations] = useState(data);
-
   return (
     <div>
       <div className="header-container">

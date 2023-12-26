@@ -46,8 +46,7 @@
 
     .cards-container {
       display: flex;
-      flex-wrap: wrap; 
-      // gap: 2.5rem;
+      flex-wrap: wrap;
       justify-content: flex-start;
         margin: 2rem 6rem;
         width: 1340px;
@@ -55,3 +54,4 @@
         border-radius: 25px;
         background: #F6F6F6;
     }
+
