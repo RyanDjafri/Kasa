@@ -1,35 +1,6 @@
 @import "../components/_settings";
 
-div {
-  .header-container {
-    header {
-      margin: 2rem 6rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      
-      img {
-        width: 210.322px;
-        height: 68px;
-      }
-      
-      nav {
-        display: flex;
-        gap: 2rem;
-        
-        a {
-          color: $pink;
-          text-align: right;
-          font-family: "Montserrat", sans-serif;
-          font-size: 24px;
-          font-style: normal;
-          font-weight: 500;
-          line-height: 142.6%;
-          text-decoration-line: underline;
-        }
-      }
-    }
-  }
+
 
   .bg-container {
     width: 1240px;
@@ -56,4 +27,3 @@ div {
     border-radius: 25px;
     background: #F6F6F6;
   }
-}
