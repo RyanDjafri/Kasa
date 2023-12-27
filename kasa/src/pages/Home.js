@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import BgPhoto from "../assets/bg.jpg";
 import data from "../logements.json";
 import Card from "../components/Card";
+import Vector from "../assets/Vector.svg";
 
 const Home = () => {
   const [locations, setLocations] = useState(data);
@@ -27,6 +28,13 @@ const Home = () => {
             return <Card key={location.id} location={location} />;
           })}
       </div>
+      {/* <footer>
+        <div className="footer-div">
+          <div className="logo">
+            <img src={Vector} alt="vector-logo" className="vector" />
+          </div>
+        </div>
+      </footer> */}
     </div>
   );
 };
