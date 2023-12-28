@@ -1,9 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "../components/Navbar";
 import BgPhoto from "../assets/kalen.png";
 import cross from "../assets/cross-up.svg";
 
 const About = () => {
+  const divTexts = document.querySelectorAll(".div-text");
+  // useEffect(() => {
+  //   console.log(divTexts);
+  //   divTexts.forEach((div) => {
+  //     const cross = div.querySelector(".cross");
+  //     cross.addEventListener("click", () => {
+  //       div.style.display = "block";
+  //     });
+  //   });
+  // }, []);
   return (
     <div>
       <Navbar />
@@ -35,10 +45,8 @@ const About = () => {
         </div>
         <div className="opening-div">
           <div className="open">
-            <p className="div-title">
-              Service
-              <img src={cross} alt="cross-up" className="cross" />
-            </p>
+            <p className="div-title">Service </p>
+            <img src={cross} alt="cross-up" className="cross" />
           </div>
           <div className="div-text">
             La bienveillance fait partie des valeurs fondactrices de Kasa. Tout
