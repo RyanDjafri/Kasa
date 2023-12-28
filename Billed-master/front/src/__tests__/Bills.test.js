@@ -86,6 +86,10 @@ describe("Given I am connected as an employee", () => {
     });
 
     test("Then each bill should have a name, amount, date displayed", () => {
+      const root = document.createElement("div");
+      root.setAttribute("id", "root");
+      root.innerHTML = BillsUI({ data: bills });
+      document.body.append(root);
       const billName = screen.getByText(bills[0].name);
       const billAmount = screen.getByText(`${bills[0].amount} €`);
       const billDate = screen.getByText(bills[0].date.toString());
