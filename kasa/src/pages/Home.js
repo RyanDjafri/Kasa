@@ -3,7 +3,7 @@ import BgPhoto from "../assets/bg.jpg";
 import data from "../logements.json";
 import Navbar from "../components/Navbar";
 import Card from "../components/Card";
-import Footer from "../components/Footer";
+// import Footer from "../components/Footer";
 
 const Home = () => {
   const [locations, setLocations] = useState(data);
