@@ -1,0 +1,52 @@
+.location-container {
+    .location-cover  {
+        width: 1240px;
+        height: 415px;
+        margin: 2rem auto;
+        img {
+     border-radius: 25px;
+     width: 100%;
+     height:100%;
+    }
+    }
+    .location-description{
+        .description-left {
+            margin: 2rem auto;
+            .location-title {
+                color: #FF6060;
+                font-family: "Montserrat", sans-serif;
+                font-size: 36px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 142.6%;
+            }
+            .location-area {
+                color: #FF6060;
+                font-family: "Montserrat", sans-serif;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 142.6%;
+            }
+            .location-tags {
+                display:flex;
+                gap:1rem;
+                .tag-container {
+                    width: 115px;
+height: 25px;
+border-radius: 10px;
+background: #FF6060;
+.location-tag {
+    color: #FFF;
+text-align: center;
+font-family: "Montserrat", sans-serif;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 142.6%;
+}
+                }
+            }
+        }
+    }
+}
