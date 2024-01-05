@@ -1,6 +1,6 @@
 import React from "react";
 import Logo from "../assets/logokasa.svg";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -8,8 +8,8 @@ const Navbar = () => {
       <header>
         <img src={Logo} alt="kasa-logo" />
         <nav>
-          <Link to="/">Accueil</Link>
-          <Link to="/about">A Propos</Link>
+          <NavLink to="/">Accueil</NavLink>
+          <NavLink to="/about">A Propos</NavLink>
         </nav>
       </header>
     </div>

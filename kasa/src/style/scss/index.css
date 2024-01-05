@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
 .bg-container {
   width: 1240px;
   height: 223px;
@@ -73,7 +77,6 @@
   font-style: normal;
   font-weight: 500;
   line-height: 142.6%;
-  text-decoration-line: underline;
 }
 
 .card {
@@ -140,6 +143,10 @@ header nav a {
   line-height: 142.6%;
 }
 
+.active-link {
+  text-decoration: underline;
+}
+
 .about-img {
   object-fit: cover;
   object-position: center center;
@@ -192,6 +199,9 @@ header nav a {
   border-radius: 10px 10px 5px 5px;
   background: #F6F6F6;
   width: 1023px;
+}
+
+.hide {
   display: none;
 }
 /*# sourceMappingURL=index.css.map */
