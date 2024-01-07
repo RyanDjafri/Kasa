@@ -59,9 +59,8 @@ line-height: 142.6%;
             gap:1rem;
         }
         .stars-container {
+            border:1px solid;
             display:flex;
-            width: 60px; 
-             height: 50px;
         }
         .location-name {
             width:50%;
@@ -80,4 +79,22 @@ border-radius:100%;
         }
      
     }
+ .description {
+    display:flex;
+    align-items: center;
+    gap:1rem;
+ }
+        .list-item {
+            padding-left:1rem;
+                color: #FF6060;
+                font-family: "Montserrat", sans-serif;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 142.6%;
+                border-radius: 10px 10px 5px 5px;
+                background: #F6F6F6;
+                width:1023px; 
+                list-style:none;
+        }
 }

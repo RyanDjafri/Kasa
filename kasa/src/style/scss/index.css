@@ -191,6 +191,7 @@ header nav a {
 }
 
 .div-text {
+  padding-left: 1rem;
   color: #FF6060;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
@@ -272,9 +273,8 @@ header nav a {
 }
 
 .location-container .description-right .stars-container {
+  border: 1px solid;
   display: flex;
-  width: 60px;
-  height: 50px;
 }
 
 .location-container .description-right .location-name {
@@ -292,5 +292,25 @@ header nav a {
   width: 64px;
   height: 64px;
   border-radius: 100%;
+}
+
+.location-container .description {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.location-container .list-item {
+  padding-left: 1rem;
+  color: #FF6060;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.6%;
+  border-radius: 10px 10px 5px 5px;
+  background: #F6F6F6;
+  width: 1023px;
+  list-style: none;
 }
 /*# sourceMappingURL=index.css.map */

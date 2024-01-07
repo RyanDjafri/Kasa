@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import data from "../logements.json";
 import Star from "../components/Star";
+import CardComponent from "../components/CardComponent";
 
 const Location = () => {
   const { id } = useParams();
@@ -43,6 +44,19 @@ const Location = () => {
                   <Star key={index} />
                 ))}
             </div>
+          </div>
+        </div>
+        <div className="description">
+          <CardComponent
+            prop={{ title: "Description", text: location.description }}
+          />
+          <div className="equipments">
+            <CardComponent
+              prop={{
+                title: "Equipements",
+                equipments: location.equipments,
+              }}
+            />
           </div>
         </div>
       </div>
