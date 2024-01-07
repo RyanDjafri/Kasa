@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import data from "../logements.json";
+import Star from "../components/Star";
 
 const Location = () => {
   const { id } = useParams();
@@ -28,7 +29,21 @@ const Location = () => {
                 ))}
             </div>
           </div>
-          <div className="description-right"></div>
+          <div className="description-right">
+            <div className="location-info">
+              <h3 className="location-name">{location.host.name}</h3>
+              <img
+                src={location.host.picture}
+                alt={location.host.name + "location"}
+              />
+            </div>
+            <div className="stars-container">
+              {location.rating &&
+                Array.from({ length: location.rating }).map((_, index) => (
+                  <Star key={index} />
+                ))}
+            </div>
+          </div>
         </div>
       </div>
     </div>
