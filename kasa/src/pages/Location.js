@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar";
 import data from "../logements.json";
 import Star from "../components/Star";
 import CardComponent from "../components/CardComponent";
+import Carousel from "../components/Carousel";
 
 const Location = () => {
   const { id } = useParams();
@@ -15,7 +16,7 @@ const Location = () => {
       <Navbar />
       <div className="location-container">
         <div className="location-cover">
-          <img src={location.cover} alt={`${location.title} image`} />
+          <Carousel pictures={location.pictures} />
         </div>
         <div className="location-description">
           <div className="description-left">
@@ -41,7 +42,7 @@ const Location = () => {
             <div className="stars-container">
               {location.rating &&
                 Array.from({ length: location.rating }).map((_, index) => (
-                  <Star key={index} />
+                  <Star key={index} prop={location.rating} />
                 ))}
             </div>
           </div>
