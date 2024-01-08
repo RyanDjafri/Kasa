@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import BgPhoto from "../assets/kalen.png";
 import CardComponent from "../components/CardComponent";
+import Footer from "../components/Footer";
 
 const About = () => {
   return (
@@ -36,6 +37,7 @@ const About = () => {
           }}
         />
       </div>
+      <Footer />
     </div>
   );
 };

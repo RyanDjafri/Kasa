@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import { Link } from "react-router-dom";
+import Footer from "../components/Footer";
 
 const PageError = () => {
   return (
@@ -11,6 +12,7 @@ const PageError = () => {
         <h3>Oups! La page que vous demandez n'existe pas.</h3>
         <Link to="/">Retourner sur la page d’accueil</Link>
       </div>
+      <Footer />
     </div>
   );
 };

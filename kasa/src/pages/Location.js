@@ -5,6 +5,7 @@ import data from "../logements.json";
 import Star from "../components/Star";
 import CardComponent from "../components/CardComponent";
 import Carousel from "../components/Carousel";
+import Footer from "../components/Footer";
 
 const Location = () => {
   const { id } = useParams();
@@ -58,6 +59,7 @@ const Location = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
