@@ -40,10 +40,7 @@ const Location = () => {
               />
             </div>
             <div className="stars-container">
-              {location.rating &&
-                Array.from({ length: location.rating }).map((_, index) => (
-                  <Star key={index} prop={location.rating} />
-                ))}
+              <Star prop={location.rating} />
             </div>
           </div>
         </div>

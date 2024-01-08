@@ -61,7 +61,6 @@ line-height: 142.6%;
             gap:1rem;
         }
         .stars-container {
-            border:1px solid;
             display:flex;
         }
         .location-name {
@@ -115,5 +114,9 @@ border-radius:100%;
             border-radius: 25px;
             width: 1240px;
             height: 415px;
+    }
+    .star img {
+        width: 64px;
+        height: 36px;
     }
 }
