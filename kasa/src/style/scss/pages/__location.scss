@@ -13,6 +13,8 @@
     }
     }
     .location-description{
+        width: 1240px;
+        margin:2rem auto;
         display:flex;
         align-items:center;
         justify-content: space-between;
@@ -36,6 +38,7 @@ line-height: 142.6%;
             .location-tags {
                 display:flex;
                 gap:1rem;
+                margin:1rem 0;
                 .tag-container {
                     width: 115px;
 height: 25px;
@@ -57,6 +60,7 @@ line-height: 142.6%;
     .description-right {
         .location-info {
             display:flex;
+            justify-content: flex-end;
             align-items: center;
             gap:1rem;
         }
@@ -64,7 +68,7 @@ line-height: 142.6%;
             display:flex;
         }
         .location-name {
-            width:50%;
+            width:25%;
             color: #FF6060;
 text-align: right;
 font-family: "Montserrat", sans-serif;
@@ -81,9 +85,12 @@ border-radius:100%;
      
     }
  .description {
+    width: 1240px;
+    margin:0.5rem auto;
     display:flex;
     align-items: center;
-    gap:1rem;
+    justify-content: space-between;
+    gap:76px;
  }
         .list-item {
             padding-left:1rem;
@@ -119,4 +126,5 @@ border-radius:100%;
         width: 64px;
         height: 36px;
     }
+
 }

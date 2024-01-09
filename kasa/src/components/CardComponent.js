@@ -11,7 +11,7 @@ const CardComponent = ({ prop }) => {
 
   return (
     <div className="opening-div">
-      <div className="open">
+      <div className={`open ${prop.size}`}>
         <p className="div-title">{prop.title}</p>
         <img
           alt="cross-down"

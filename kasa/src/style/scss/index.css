@@ -168,7 +168,7 @@ header nav a {
   line-height: 142.6%;
 }
 
-.active-link {
+.active {
   text-decoration: underline;
 }
 
@@ -203,6 +203,10 @@ header nav a {
   align-items: center;
   border-radius: 5px;
   background: #FF6060;
+}
+
+.medium {
+  width: 582px;
 }
 
 .div-title {
@@ -247,6 +251,8 @@ header nav a {
 }
 
 .location-container .location-description {
+  width: 1240px;
+  margin: 2rem auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -273,6 +279,7 @@ header nav a {
 .location-container .location-description .description-left .location-tags {
   display: flex;
   gap: 1rem;
+  margin: 1rem 0;
 }
 
 .location-container .location-description .description-left .location-tags .tag-container {
@@ -294,6 +301,7 @@ header nav a {
 
 .location-container .description-right .location-info {
   display: flex;
+  justify-content: flex-end;
   align-items: center;
   gap: 1rem;
 }
@@ -303,7 +311,7 @@ header nav a {
 }
 
 .location-container .description-right .location-name {
-  width: 50%;
+  width: 25%;
   color: #FF6060;
   text-align: right;
   font-family: "Montserrat", sans-serif;
@@ -320,9 +328,12 @@ header nav a {
 }
 
 .location-container .description {
+  width: 1240px;
+  margin: 0.5rem auto;
   display: flex;
   align-items: center;
-  gap: 1rem;
+  justify-content: space-between;
+  gap: 76px;
 }
 
 .location-container .list-item {

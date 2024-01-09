@@ -45,17 +45,24 @@ const Location = () => {
             </div>
           </div>
         </div>
-        <div className="description">
-          <CardComponent
-            prop={{ title: "Description", text: location.description }}
-          />
-          <div className="equipments">
+        <div className="description-bottom">
+          <div className="description">
             <CardComponent
               prop={{
-                title: "Equipements",
-                equipments: location.equipments,
+                title: "Description",
+                text: location.description,
+                size: "medium",
               }}
             />
+            <div className="equipments">
+              <CardComponent
+                prop={{
+                  title: "Equipements",
+                  equipments: location.equipments,
+                  size: "medium",
+                }}
+              />
+            </div>
           </div>
         </div>
       </div>
