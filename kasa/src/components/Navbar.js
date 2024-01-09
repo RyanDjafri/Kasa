@@ -9,7 +9,7 @@ const Navbar = () => {
         <img src={Logo} alt="kasa-logo" />
         <nav>
           <NavLink to="/">Home</NavLink>
-          <NavLink to="/about">About</NavLink>
+          <NavLink to="/about">A Propos</NavLink>
         </nav>
       </header>
     </div>
