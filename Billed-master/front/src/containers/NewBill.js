@@ -1,111 +1,208 @@
+import { fireEvent, screen, waitFor } from "@testing-library/dom";
+import NewBill from "../containers/NewBill.js";
 import { ROUTES_PATH } from "../constants/routes.js";
-import Logout from "./Logout.js";
+import { localStorageMock } from "../__mocks__/localStorage.js";
+import "@testing-library/jest-dom";
 
-export default class NewBill {
-  constructor({ document, onNavigate, store, localStorage }) {
-    this.document = document;
-    this.onNavigate = onNavigate;
-    this.store = store;
-    this.fileValidationPassed = true;
-    const formNewBill = this.document.querySelector(
-      `form[data-testid="form-new-bill"]`
+describe("Given I am on the New Bill page", () => {
+  beforeEach(() => {
+    Object.defineProperty(window, "localStorage", { value: localStorageMock });
+    window.localStorage.setItem(
+      "user",
+      JSON.stringify({
+        type: "Employee",
+        email: "a@a",
+      })
     );
-    formNewBill.addEventListener("submit", this.handleSubmit);
-    const file = this.document.querySelector(`input[data-testid="file"]`);
-    file.addEventListener("change", this.handleChangeFile);
-    this.fileUrl = null;
-    this.fileName = null;
-    this.billId = null;
-    new Logout({ document, localStorage, onNavigate });
-  }
+  });
 
-  handleChangeFile = (e) => {
-    e.preventDefault();
-    const fileInput = this.document.querySelector(`input[data-testid="file"]`);
-    const file = fileInput.files[0];
+  test("When I submit a valid bill form, it should create a new bill using the store API", async () => {
+    document.body.innerHTML =
+      '<div data-testid="form-new-bill"><input data-testid="file" type="file" /><button data-testid="submit-button">Submit</button></div>';
 
-    if (!file) {
-      console.error("No file selected");
-      return;
-    }
-
-    const fileName = file.name;
-    this.fileName = fileName;
-
-    const formData = new FormData();
-    const email = JSON.parse(localStorage.getItem("user")).email;
-    const allowedFileTypes = ["image/jpeg", "image/jpg", "image/png"];
-
-    if (!allowedFileTypes.includes(file.type)) {
-      console.error(
-        "Invalid file type. Please select a JPG, JPEG, PNG, or PDF file."
-      );
-      this.fileValidationPassed = false;
-      return;
-    }
-
-    formData.append("file", file);
-    formData.append("email", email);
-
-    this.store
-      .bills()
-      .create({
-        data: formData,
-        headers: {
-          noContentType: true,
-        },
-      })
-      .then(({ fileName, key }) => {
-        this.fileUrl = fileName;
-        this.billId = key;
-        console.log("File uploaded successfully:", fileName);
-      })
-      .catch((error) => {
-        console.error("Error uploading file:", error);
-      });
-  };
-
-  handleSubmit = (e) => {
-    e.preventDefault();
-
-    if (!this.fileValidationPassed) {
-      console.error("File validation failed. Cannot submit the form.");
-      return;
-    } else {
-      const email = JSON.parse(localStorage.getItem("user")).email;
-      const bill = {
-        email,
-        type: e.target.querySelector(`select[data-testid="expense-type"]`)
-          .value,
-        name: e.target.querySelector(`input[data-testid="expense-name"]`).value,
-        amount: parseInt(
-          e.target.querySelector(`input[data-testid="amount"]`).value
+    const onNavigateMock = jest.fn();
+    const storeMock = {
+      bills: () => ({
+        create: jest.fn(() =>
+          Promise.resolve({ fileUrl: "mocked-url", key: "mocked-key" })
         ),
-        date: e.target.querySelector(`input[data-testid="datepicker"]`).value,
-        vat: e.target.querySelector(`input[data-testid="vat"]`).value,
-        pct:
-          parseInt(e.target.querySelector(`input[data-testid="pct"]`).value) ||
-          20,
-        commentary: e.target.querySelector(`textarea[data-testid="commentary"]`)
-          .value,
-        fileUrl: this.fileUrl,
-        fileName: this.fileName,
-        status: "pending",
-      };
-      this.updateBill(bill);
-      this.onNavigate(ROUTES_PATH["Bills"]);
-    }
-  };
+      }),
+    };
 
-  updateBill = (bill) => {
-    if (this.store) {
-      this.store
-        .bills()
-        .update({ data: JSON.stringify(bill), selector: this.billId })
-        .then(() => {
-          this.onNavigate(ROUTES_PATH["Bills"]);
-        })
-        .catch((error) => console.error("Error updating bill:", error));
-    }
-  };
-}
+    const newBillInstance = new NewBill({
+      document,
+      onNavigate: onNavigateMock,
+      store: storeMock,
+      localStorage: window.localStorage,
+    });
+
+    const fileInput = screen.getByTestId("file");
+    const imageContent = await fetch("path/to/sample/image.png").then((res) =>
+      res.blob()
+    );
+    fireEvent.change(fileInput, {
+      target: {
+        files: [
+          new File([imageContent], {
+            type: "image/png",
+            name: "test.png",
+          }),
+        ],
+      },
+    });
+
+    const submitButton = screen.getByTestId("submit-button");
+    fireEvent.click(submitButton);
+
+    await waitFor(() => {
+      expect(onNavigateMock).toHaveBeenCalledWith(ROUTES_PATH.NewBill);
+      expect(storeMock.bills().create).toHaveBeenCalledWith({
+        data: expect.any(FormData),
+        headers: { noContentType: true },
+      });
+      expect(newBillInstance.fileUrl).toBe("mocked-url");
+      expect(newBillInstance.billId).toBe("mocked-key");
+    });
+  });
+
+  test("When I submit a form with no file selected, it should not create a new bill", async () => {
+    document.body.innerHTML =
+      '<div data-testid="form-new-bill"><input data-testid="file" type="file" /><button data-testid="submit-button">Submit</button></div>';
+
+    const onNavigateMock = jest.fn();
+    const storeMock = {
+      bills: () => ({
+        create: jest.fn(),
+      }),
+    };
+
+    const newBillInstance = new NewBill({
+      document,
+      onNavigate: onNavigateMock,
+      store: storeMock,
+      localStorage: window.localStorage,
+    });
+
+    const submitButton = screen.getByTestId("submit-button");
+    fireEvent.click(submitButton);
+
+    await waitFor(() => {
+      expect(onNavigateMock).not.toHaveBeenCalledWith(ROUTES_PATH.NewBill);
+      expect(storeMock.bills().create).not.toHaveBeenCalled();
+    });
+  });
+
+  test("When I submit a form with an invalid file type, it should not create a new bill", async () => {
+    document.body.innerHTML =
+      '<div data-testid="form-new-bill"><input data-testid="file" type="file" /><button data-testid="submit-button">Submit</button></div>';
+
+    const onNavigateMock = jest.fn();
+    const storeMock = {
+      bills: () => ({
+        create: jest.fn(),
+      }),
+    };
+
+    const newBillInstance = new NewBill({
+      document,
+      onNavigate: onNavigateMock,
+      store: storeMock,
+      localStorage: window.localStorage,
+    });
+
+    const fileInput = screen.getByTestId("file");
+    fireEvent.change(fileInput, {
+      target: {
+        files: [
+          new File(["file content"], { type: "text/plain", name: "test.txt" }),
+        ],
+      },
+    });
+
+    const submitButton = screen.getByTestId("submit-button");
+    fireEvent.click(submitButton);
+
+    await waitFor(() => {
+      expect(onNavigateMock).not.toHaveBeenCalledWith(ROUTES_PATH.NewBill);
+      expect(storeMock.bills().create).not.toHaveBeenCalled();
+    });
+  });
+
+  test("When an invalid file type is selected, it should log an error message and set fileValidationPassed to false", () => {
+    document.body.innerHTML =
+      '<div data-testid="form-new-bill"><input data-testid="file" type="file" /><button data-testid="submit-button">Submit</button></div>';
+
+    const onNavigateMock = jest.fn();
+    const storeMock = {
+      bills: () => ({
+        create: jest.fn(),
+      }),
+    };
+
+    const newBillInstance = new NewBill({
+      document,
+      onNavigate: onNavigateMock,
+      store: storeMock,
+      localStorage: window.localStorage,
+    });
+
+    const fileInput = screen.getByTestId("file");
+    fireEvent.change(fileInput, {
+      target: {
+        files: [
+          new File(["file content"], { type: "text/plain", name: "test.txt" }),
+        ],
+      },
+    });
+
+    fireEvent.click(screen.getByTestId("submit-button"));
+
+    expect(console.error).toHaveBeenCalledWith(
+      "Invalid file type. Please select a JPG, JPEG, PNG, or PDF file."
+    );
+    expect(newBillInstance.fileValidationPassed).toBe(false);
+  });
+
+  test("When I submit a form with a successful file upload, it should update fileUrl and billId", async () => {
+    document.body.innerHTML =
+      '<div data-testid="form-new-bill"><input data-testid="file" type="file" /><button data-testid="submit-button">Submit</button></div>';
+
+    const onNavigateMock = jest.fn();
+    const storeMock = {
+      bills: () => ({
+        create: jest.fn(() =>
+          Promise.resolve({ fileUrl: "mocked-url", key: "mocked-key" })
+        ),
+      }),
+    };
+
+    const newBillInstance = new NewBill({
+      document,
+      onNavigate: onNavigateMock,
+      store: storeMock,
+      localStorage: window.localStorage,
+    });
+
+    const fileInput = screen.getByTestId("file");
+    const imageContent = await fetch("path/to/sample/image.png").then((res) =>
+      res.blob()
+    );
+    fireEvent.change(fileInput, {
+      target: {
+        files: [
+          new File([imageContent], {
+            type: "image/png",
+            name: "test.png",
+          }),
+        ],
+      },
+    });
+
+    fireEvent.click(screen.getByTestId("submit-button"));
+
+    await waitFor(() => {
+      expect(newBillInstance.fileUrl).toBe("mocked-url");
+      expect(newBillInstance.billId).toBe("mocked-key");
+    });
+  });
+});
