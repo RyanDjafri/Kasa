@@ -20,9 +20,10 @@ const CardComponent = ({ prop }) => {
           onClick={toggleVisibilty}
         />
       </div>
-
       {prop.text && (
-        <p className={isVisible ? "div-text" : "hide"}>{prop.text}</p>
+        <p className={isVisible ? `div-text ${prop.size}` : "hide"}>
+          {prop.text}
+        </p>
       )}
 
       {prop.equipments && prop.equipments.length > 0 && (

@@ -22,4 +22,18 @@
     }
 }
 
+@media screen and (max-width:1320px){
+    .card {
+        width: 300px;
+        height: 340px;
+        flex: 0 1 calc(33.33% - 2rem); 
+}
+}
+@media screen and (max-width:1188px){
+    .card {
+        width: 250px;
+        height: 280px;
+        flex: 0 1 calc(33.33% - 2rem); 
+}
+}
 
