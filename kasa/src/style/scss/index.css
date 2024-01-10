@@ -351,11 +351,13 @@ header nav a {
 }
 
 .location-container .left {
-  transform: translateX(100%);
+  transform: translateX(80%);
+  z-index: 2;
 }
 
 .location-container .right {
-  transform: translateX(-100%);
+  transform: translateX(-80%);
+  z-index: 2;
 }
 
 .location-container .star img {
@@ -365,6 +367,8 @@ header nav a {
 
 .location-container .carousel-image {
   object-fit: cover;
+  position: absolute;
+  z-index: -1;
   border-radius: 25px;
   width: 1240px;
   height: 415px;
