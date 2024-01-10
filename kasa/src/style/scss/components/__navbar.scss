@@ -40,7 +40,7 @@ header {
 
   @media screen and (max-width:1080px){
     header {
-      width:950px;
+      width:900px;
     }
     }
   
@@ -102,3 +102,49 @@ header {
                   text-transform: uppercase;
                   }
                   }
+
+                  @media screen and (max-width:930px){
+                    header {
+                      width:500px;
+                    }
+                    img {
+                      width: 120px;
+                      height: 40px;
+                    }
+                }
+                @media screen and (max-width:835px){
+                  header {
+                    width:500px;
+                  }
+                  img {
+                    width: 100px;
+                    height: 35px;
+                  }
+              }
+              @media screen and (max-width:730px){
+                header {
+                  width:500px;
+                }
+                img {
+                  width: 100px;
+                  height: 35px;
+                }
+            }
+            
+            
+@media screen and (max-width:430px){
+header {
+  width: 335px;
+  img {
+    width: 90px;
+    height: 35px;
+  }
+  nav a {
+    font-size: 16px;
+  }
+}
+}
+
+@media screen and (max-width:351px){
+
+}

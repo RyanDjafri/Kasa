@@ -37,3 +37,32 @@
 }
 }
 
+
+@media screen and (max-width:930px){
+    .card {
+        width: 250px;
+        height: 280px;
+        flex: 0 1 calc(50% - 2rem); 
+}
+}
+
+
+@media screen and (max-width:730px){
+    .card {
+        width: 400px;
+        height: 300px;
+        flex: 0 1 calc(80% - 2rem); 
+}
+.card-title {
+    width: 295.588px;
+}
+}
+
+
+@media screen and (max-width:430px){
+    .card {
+        width: 335px;
+        height: 255px;
+        flex: 0 1 calc(80% - 2rem); 
+}
+  }
