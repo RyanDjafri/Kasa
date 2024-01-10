@@ -70,6 +70,7 @@ line-height: 142.6%;
         }
         .location-name {
             width:25%;
+            margin:0 1rem;
             color: #FF6060;
 text-align: right;
 font-family: "Montserrat", sans-serif;
@@ -85,10 +86,11 @@ border-radius:100%;
         }
      
     }
- .description {
+ .description-bottom {
     width: 1240px;
-    margin:0.5rem auto;
+    margin:2rem auto;
     display:flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     gap:76px;
@@ -120,7 +122,7 @@ border-radius:100%;
         z-index:2;
     }
     .star img {
-        width: 64px;
+        width: 54px;
         height: 36px;
     }
     .carousel-image {

@@ -189,14 +189,9 @@ header nav a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1023px;
   padding: 10px 20px 10px 15px;
   border-radius: 5px;
   background: #FF6060;
-}
-
-.medium {
-  width: 582px;
 }
 
 .div-title {
@@ -218,7 +213,6 @@ header nav a {
   line-height: 142.6%;
   border-radius: 10px 10px 5px 5px;
   background: #F6F6F6;
-  width: 1023px;
 }
 
 .hide {
@@ -227,6 +221,14 @@ header nav a {
 
 .cross {
   cursor: pointer;
+}
+
+.medium {
+  width: 582px;
+}
+
+.large {
+  width: 1023px;
 }
 
 .location-container .location-cover {
@@ -307,6 +309,7 @@ header nav a {
 
 .location-container .description-right .location-name {
   width: 25%;
+  margin: 0 1rem;
   color: #FF6060;
   text-align: right;
   font-family: "Montserrat", sans-serif;
@@ -322,10 +325,11 @@ header nav a {
   border-radius: 100%;
 }
 
-.location-container .description {
+.location-container .description-bottom {
   width: 1240px;
-  margin: 0.5rem auto;
+  margin: 2rem auto;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   gap: 76px;
@@ -361,7 +365,7 @@ header nav a {
 }
 
 .location-container .star img {
-  width: 64px;
+  width: 54px;
   height: 36px;
 }
 

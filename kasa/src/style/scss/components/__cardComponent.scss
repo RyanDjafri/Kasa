@@ -14,16 +14,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1023px;
     padding: 10px 20px 10px 15px;
     border-radius: 5px;
     background: #FF6060;
   }
-  
-  .medium {
-    width: 582px;
-  }
-  
+
   .div-title {
     color: #FFF;
     font-family: "Montserrat", sans-serif;
@@ -43,7 +38,6 @@
     line-height: 142.6%;
     border-radius: 10px 10px 5px 5px;
     background: #F6F6F6;
-    width: 1023px;
   }
   
   .hide {
@@ -54,5 +48,12 @@
     cursor: pointer;
   }
   
+  .medium {
+    width: 582px;
+  }
+  .large {
+    width:1023px;
+  }
+
 
   
