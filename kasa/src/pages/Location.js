@@ -11,7 +11,6 @@ const Location = () => {
   const { id } = useParams();
   const [locations, setLocations] = useState(data);
   const location = locations.find((loc) => loc.id === id);
-  console.log(location);
   return (
     <div>
       <Navbar />
