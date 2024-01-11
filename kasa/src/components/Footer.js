@@ -3,6 +3,7 @@ import Vector from "../assets/Vector.svg";
 import Group from "../assets/Group.svg";
 import S from "../assets/s.svg";
 import A from "../assets/a.svg";
+
 const Footer = () => {
   return (
     <div>
