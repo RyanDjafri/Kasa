@@ -3,6 +3,7 @@ import NewBill from "../containers/NewBill.js";
 import { ROUTES_PATH } from "../constants/routes.js";
 import { localStorageMock } from "../__mocks__/localStorage.js";
 import "@testing-library/jest-dom";
+
 describe("Given I am on the New Bill page", () => {
   beforeEach(() => {
     Object.defineProperty(window, "localStorage", { value: localStorageMock });
@@ -17,7 +18,7 @@ describe("Given I am on the New Bill page", () => {
 
   test("When I submit a valid bill form, it should create a new bill using the store API", async () => {
     document.body.innerHTML =
-      '<div data-testid="form-new-bill"><input data-testid="file" type="file" /><button data-testid="submit-button">Submit</button></div>';
+      '<form data-testid="form-new-bill"><input data-testid="file" type="file" /><button data-testid="submit-button">Submit</button></form>';
 
     const onNavigateMock = jest.fn();
     const storeMock = {
@@ -68,7 +69,7 @@ describe("Given I am on the New Bill page", () => {
 
   test("When I submit a form with no file selected, it should not create a new bill", async () => {
     document.body.innerHTML =
-      '<div data-testid="form-new-bill"><input data-testid="file" type="file" /><button data-testid="submit-button">Submit</button></div>';
+      '<form data-testid="form-new-bill"><input data-testid="file" type="file" /><button data-testid="submit-button">Submit</button></form>';
 
     const onNavigateMock = jest.fn();
     const storeMock = {
@@ -95,7 +96,7 @@ describe("Given I am on the New Bill page", () => {
 
   test("When I submit a form with an invalid file type, it should not create a new bill", async () => {
     document.body.innerHTML =
-      '<div data-testid="form-new-bill"><input data-testid="file" type="file" /><button data-testid="submit-button">Submit</button></div>';
+      '<form data-testid="form-new-bill"><input data-testid="file" type="file" /><button data-testid="submit-button">Submit</button></form>';
 
     const onNavigateMock = jest.fn();
     const storeMock = {
