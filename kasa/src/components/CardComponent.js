@@ -27,7 +27,7 @@ const CardComponent = ({ prop }) => {
       )}
 
       {prop.equipments && prop.equipments.length > 0 && (
-        <div className="equipments-list">
+        <div className={`equipments-list ${prop.size}`}>
           <ul className={isVisible ? "list" : "hide"}>
             {prop.equipments.map((equip, index) => (
               <li key={index} className="list-item">
