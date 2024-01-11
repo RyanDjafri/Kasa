@@ -808,6 +808,16 @@ header nav a {
     width: 1140px;
     height: 350px;
   }
+  .location-container .location-description {
+    width: 1140px;
+  }
+  .location-container .location-description .location-title {
+    font-size: 30px;
+  }
+  .location-container .star img {
+    width: 40px;
+    height: 39px;
+  }
 }
 
 @media screen and (max-width: 1184px) {
@@ -827,6 +837,16 @@ header nav a {
   .location-container .carousel-image {
     width: 1050px;
     height: 300px;
+  }
+  .location-container .location-description {
+    width: 1050px;
+  }
+  .location-container .location-description .location-title {
+    font-size: 25px;
+  }
+  .location-container .star img {
+    width: 35px;
+    height: 35px;
   }
 }
 
@@ -848,6 +868,16 @@ header nav a {
     width: 950px;
     height: 280px;
   }
+  .location-container .location-description {
+    width: 950px;
+  }
+  .location-container .location-description .location-title {
+    font-size: 20px;
+  }
+  .location-container .star img {
+    width: 30px;
+    height: 35px;
+  }
 }
 
 @media screen and (max-width: 980px) {
@@ -867,6 +897,17 @@ header nav a {
   .location-container .carousel-image {
     width: 900px;
     height: 230px;
+  }
+  .location-container .location-description {
+    width: 900px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .location-container .location-description .description-left .location-title {
+    font-size: 30px;
+  }
+  .location-container .location-description .location-info {
+    justify-content: flex-start;
   }
 }
 
@@ -907,6 +948,20 @@ header nav a {
   .location-container .carousel-image {
     width: 750px;
     height: 280px;
+  }
+  .location-container .location-description {
+    width: 750px;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .location-container .location-description .description-left .location-title {
+    font-size: 25px;
+  }
+  .location-container .location-description .description-left .location-tags .tag-container {
+    width: 150px;
+  }
+  .location-container .location-description .location-info {
+    justify-content: flex-start;
   }
 }
 
@@ -955,6 +1010,23 @@ header nav a {
   .location-container .carousel-image {
     width: 600px;
     height: 310px;
+  }
+  .location-container .location-description {
+    width: 600px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .location-container .location-description .description-left .location-title {
+    font-size: 25px;
+  }
+  .location-container .location-description .description-left .location-tags .tag-container {
+    width: 150px;
+  }
+  .location-container .location-description .description-right {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
   }
 }
 
@@ -1008,9 +1080,9 @@ header nav a {
 
 @media screen and (max-width: 351px) {
   .location-container .location-cover {
-    width: 335px;
-    height: 255px;
-    margin: 2rem 1.2rem;
+    width: 400px;
+    height: 330px;
+    margin: 2rem auto;
   }
   .location-container .location-cover div {
     width: 100%;

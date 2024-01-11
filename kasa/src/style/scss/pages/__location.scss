@@ -153,6 +153,16 @@ border-radius:100%;
         width: 1140px;
         height: 350px;
 }
+.location-description {
+    width:1140px;
+    .location-title {
+        font-size:30px;
+    }
+}
+.star img {
+    width: 40px;
+    height: 39px;
+}
     }
 }
 
@@ -175,6 +185,16 @@ border-radius:100%;
     .carousel-image {
         width: 1050px;
         height: 300px;
+}
+.location-description {
+    width: 1050px;
+    .location-title {
+        font-size:25px;
+    }
+}
+.star img {
+    width: 35px;
+    height: 35px;
 }
     }
 }
@@ -200,6 +220,16 @@ border-radius:100%;
         width: 950px;
         height: 280px;
 }
+.location-description {
+    width: 950px;
+    .location-title {
+        font-size:20px;
+    }
+}
+.star img {
+    width: 30px;
+    height: 35px;
+}
     }
 }
 
@@ -207,6 +237,7 @@ border-radius:100%;
 
 @media screen and (max-width:980px){
     .location-container {
+    
         .location-cover  {
             width: 900px;
             height: 230px;
@@ -224,6 +255,17 @@ border-radius:100%;
     .carousel-image {
         width: 900px;
         height: 230px;
+}
+.location-description {
+    width: 900px;
+    flex-direction: column;
+    align-items:flex-start;
+    .description-left .location-title {
+        font-size:30px;
+    }
+    .location-info {
+            justify-content: flex-start;
+    }
 }
     }
 }
@@ -270,6 +312,22 @@ border-radius:100%;
     .carousel-image {
         width: 750px;
             height: 280px;
+}
+.location-description {
+    width: 750px;
+    flex-direction: row;
+    align-items:flex-start;
+    .description-left {
+        .location-title {
+            font-size:25px;
+    }
+    .location-tags .tag-container {
+        width:150px;
+    }
+    }
+    .location-info {
+            justify-content: flex-start;
+    }
 }
     }
 }
@@ -322,6 +380,25 @@ border-radius:100%;
     .carousel-image {
         width: 600px;
         height: 310px;
+}
+.location-description {
+   width: 600px;
+    flex-direction: column;
+    align-items:flex-start;
+    .description-left {
+        .location-title {
+            font-size:25px;
+    }
+    .location-tags .tag-container {
+        width:150px;
+    }
+    }
+    .description-right {
+        display:flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        align-items:center;
+    }
 }
     }
 }
@@ -381,9 +458,9 @@ border-radius:100%;
 @media screen and (max-width:351px){
     .location-container {
         .location-cover  {
-            width: 335px;
-height: 255px;
-           margin: 2rem 1.2rem;
+            width: 400px;
+            height: 330px;
+           margin: 2rem auto;
         div {
             width:100%;
             height:100%;
@@ -398,8 +475,8 @@ height: 255px;
         height: 60px;
     }
     .carousel-image {
-        width: 335px;
-        height: 255px;
+       width: 335px;
+height: 255px;
 }
     }
 }
