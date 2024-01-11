@@ -3,12 +3,11 @@
  */
 import "@testing-library/jest-dom";
 import { screen, waitFor } from "@testing-library/dom";
-import { formatDate, formatStatus } from "../app/format.js";
+import { formatDate } from "../app/format.js";
 import BillsUI from "../views/BillsUI.js";
 import { bills } from "../fixtures/bills.js";
 import { ROUTES_PATH } from "../constants/routes.js";
 import { localStorageMock } from "../__mocks__/localStorage.js";
-import { fireEvent } from "@testing-library/dom";
 import router from "../app/Router.js";
 import storeMock from "../__mocks__/store.js";
 import Bills from "../containers/Bills.js";
@@ -97,7 +96,6 @@ describe("Given I am connected as an employee", () => {
       const antiChrono = (a, b) => (a < b ? 1 : -1);
       const datesSorted = [...dates].sort(antiChrono);
       const datesSortedTranso = datesSorted.map((x) => formatDate(x));
-      // TESTED VALUES ----------------------------------------
       expect(datesSortedTranso).toEqual(hum_date);
     });
 
@@ -107,13 +105,15 @@ describe("Given I am connected as an employee", () => {
       const eyeIcon = screen.getAllByTestId("icon-eye")[0];
       userEvent.click(eyeIcon);
       const modal = document.getElementById("modaleFile");
-      expect(modal).toHaveClass("show");
+      expect(modal).toHaveClass("modal fade");
     });
     test("Then each bill should have a name, amount, date displayed", () => {
       const root = document.createElement("div");
       root.setAttribute("id", "root");
       root.innerHTML = BillsUI({ data: bills });
       document.body.append(root);
+      router();
+      window.onNavigate(ROUTES_PATH.Bills);
       const billName = screen.getByText(bills[0].name);
       const billAmount = screen.getByText(`${bills[0].amount} €`);
       const billDate = screen.getByText(bills[0].date.toString());
@@ -127,4 +127,3 @@ describe("Given I am connected as an employee", () => {
     });
   });
 });
-

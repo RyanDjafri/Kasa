@@ -15,7 +15,6 @@ describe("Given I am on the New Bill page", () => {
       })
     );
   });
-
   test("When I submit a valid bill form, it should create a new bill using the store API", async () => {
     document.body.innerHTML =
       '<form data-testid="form-new-bill"><input data-testid="file" type="file" /><button data-testid="submit-button">Submit</button></form>';
