@@ -173,7 +173,8 @@ a {
   }
   .bg-container img {
     position: relative;
-    left: 35%;
+    left: 40%;
+    transform: translateX(-45%);
     object-fit: cover;
     width: 100%;
     height: 100%;
@@ -182,11 +183,11 @@ a {
 
 @media screen and (max-width: 351px) {
   .bg-container {
-    right: 50%;
+    left: 31%;
     transform: translateX(-25%);
     margin: 2rem auto;
-    width: 100%;
-    height: 111px;
+    width: 90%;
+    height: 90px;
   }
   .bg-container img {
     position: relative;
@@ -494,6 +495,19 @@ header nav a {
 @media screen and (max-width: 430px) {
   header {
     width: 335px;
+  }
+  header img {
+    width: 90px;
+    height: 35px;
+  }
+  header nav a {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 351px) {
+  header {
+    width: 300px;
   }
   header img {
     width: 90px;
