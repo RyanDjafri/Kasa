@@ -1,5 +1,5 @@
 .opening-divs {
-    margin-top: 2rem;
+    margin:2rem auto;
   }
   
   .opening-div {
@@ -56,4 +56,164 @@
   }
 
 
-  
+  @media screen and (max-width:1100px) {
+    // .medium {
+    //   width: 582px;
+    // }
+    .large {
+      width:950px;
+    }
+    
+  }
+
+
+  @media screen and (max-width:998px) {
+    // .medium {
+    //   width: 582px;
+    // }
+    .large {
+      width:900px;
+    }
+  }
+
+  @media screen and (max-width:930px) {
+    // .medium {
+    //   width: 582px;
+    // }
+    .large {
+      width:820px;
+    }
+  }
+
+  @media screen and (max-width:832px) {
+    // .medium {
+    //   width: 582px;
+    // }
+    .large {
+      width:750px;
+    }
+    
+  .div-title {
+    font-size: 20px;
+  }
+  .div-text {
+    font-size:12px;
+  }
+  .cross {
+    width:25px;
+    height:26px;
+  }
+  }
+
+  @media screen and (max-width:700px) {
+    // .medium {
+    //   width: 582px;
+    // }
+    .large {
+      width:650px;
+    }
+    .div-title {
+      font-size: 18px;
+    }
+    .div-text {
+      font-size:12px;
+    }
+    .cross {
+      width:23px;
+      height:24px;
+    }
+  }
+
+  @media screen and (max-width:644px) {
+    // .medium {
+    //   width: 582px;
+    // }
+    .large {
+      width:600px;
+    }
+  }
+
+  @media screen and (max-width:628px) {
+    // .medium {
+    //   width: 582px;
+    // }
+    .large {
+      width:560px;
+    }
+  }
+
+  @media screen and (max-width:555px) {
+    // .medium {
+    //   width: 582px;
+    // }
+    .large {
+      width:520px;
+    }
+    .div-title {
+      font-size: 17px;
+    }
+    .div-text {
+      font-size:11px;
+    }
+    .cross {
+      width:21px;
+      height:22px;
+    }
+  }
+
+  @media screen and (max-width:520px) {
+    // .medium {
+    //   width: 582px;
+    // }
+    .large {
+      width:460px;
+    }
+    .div-title {
+      font-size: 15px;
+    }
+    .div-text {
+      font-size:10px;
+    }
+    .cross {
+      width:20px;
+      height:21px;
+    }
+  }
+
+  @media screen and (max-width:480px) {
+    // .medium {
+    //   width: 582px;
+    // }
+    .large {
+      width:400px;
+    }
+    .div-title {
+      font-size: 17px;
+    }
+    .div-text {
+      font-size:11px;
+    }
+    .cross {
+      width:20px;
+      height:21px;
+    }
+  }
+
+  @media screen and (max-width:414px) {
+    // .medium {
+    //   width: 582px;
+    // }
+    .large {
+      width:380px;
+    }
+    .div-title {
+      font-size: 17px;
+    }
+    .div-text {
+      font-size:11px;
+    }
+    .cross {
+      width:20px;
+      height:21px;
+    }
+  }
