@@ -646,25 +646,55 @@ header nav a {
   width: 1023px;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1291px) {
+  .medium {
+    width: 500px;
+  }
   .large {
-    width: 950px;
+    width: 750px;
+  }
+}
+
+@media screen and (max-width: 1261px) {
+  .medium {
+    width: 500px;
+  }
+  .large {
+    width: 750px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .medium {
+    width: 460px;
+  }
+  .large {
+    width: 850px;
   }
 }
 
 @media screen and (max-width: 998px) {
+  .medium {
+    width: 460px;
+  }
   .large {
     width: 900px;
   }
 }
 
-@media screen and (max-width: 930px) {
+@media screen and (max-width: 980px) {
+  .medium {
+    width: 400px;
+  }
   .large {
     width: 820px;
   }
 }
 
-@media screen and (max-width: 832px) {
+@media screen and (max-width: 880px) {
+  .medium {
+    width: 350px;
+  }
   .large {
     width: 750px;
   }
@@ -681,6 +711,9 @@ header nav a {
 }
 
 @media screen and (max-width: 700px) {
+  .medium {
+    width: 650px;
+  }
   .large {
     width: 650px;
   }
@@ -697,18 +730,27 @@ header nav a {
 }
 
 @media screen and (max-width: 644px) {
+  .medium {
+    width: 600px;
+  }
   .large {
     width: 600px;
   }
 }
 
 @media screen and (max-width: 628px) {
+  .medium {
+    width: 560px;
+  }
   .large {
     width: 560px;
   }
 }
 
 @media screen and (max-width: 555px) {
+  .medium {
+    width: 520px;
+  }
   .large {
     width: 520px;
   }
@@ -725,6 +767,9 @@ header nav a {
 }
 
 @media screen and (max-width: 520px) {
+  .medium {
+    width: 460px;
+  }
   .large {
     width: 460px;
   }
@@ -741,6 +786,9 @@ header nav a {
 }
 
 @media screen and (max-width: 480px) {
+  .medium {
+    width: 400px;
+  }
   .large {
     width: 400px;
   }
@@ -757,6 +805,9 @@ header nav a {
 }
 
 @media screen and (max-width: 414px) {
+  .medium {
+    width: 380px;
+  }
   .large {
     width: 380px;
   }
@@ -769,6 +820,94 @@ header nav a {
   .cross {
     width: 20px;
     height: 21px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .medium {
+    width: 340px;
+  }
+  .large {
+    width: 340px;
+  }
+  .div-title {
+    font-size: 17px;
+  }
+  .div-text {
+    font-size: 11px;
+  }
+  .cross {
+    width: 20px;
+    height: 21px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .medium {
+    width: 300px;
+  }
+  .large {
+    width: 300px;
+  }
+  .div-title {
+    font-size: 17px;
+  }
+  .div-text {
+    font-size: 11px;
+  }
+  .cross {
+    width: 20px;
+    height: 21px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .medium {
+    width: 280px;
+  }
+  .large {
+    width: 280px;
+  }
+  .div-title {
+    font-size: 17px;
+  }
+  .div-text {
+    font-size: 11px;
+  }
+  .cross {
+    width: 20px;
+    height: 21px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .medium {
+    width: 250px;
+  }
+  .large {
+    width: 250px;
+  }
+  .div-title {
+    font-size: 17px;
+  }
+  .div-text {
+    font-size: 11px;
+  }
+  .cross {
+    width: 20px;
+    height: 21px;
+  }
+}
+
+@media screen and (max-width: 270px) {
+  .medium {
+    width: 220px;
+  }
+  .large {
+    width: 220px;
+  }
+  .div-title {
+    font-size: 17px;
   }
 }
 
@@ -917,6 +1056,13 @@ header nav a {
 }
 
 @media screen and (max-width: 1294px) {
+  .location-container .description-bottom {
+    width: 1140px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+  }
   .location-container .location-cover {
     width: 1140px;
     height: 350px;
@@ -947,6 +1093,13 @@ header nav a {
 }
 
 @media screen and (max-width: 1184px) {
+  .location-container .description-bottom {
+    width: 1050px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+  }
   .location-container .location-cover {
     width: 1050px;
     height: 300px;
@@ -977,6 +1130,13 @@ header nav a {
 }
 
 @media screen and (max-width: 1100px) {
+  .location-container .description-bottom {
+    width: 950px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+  }
   .location-container .location-cover {
     width: 950px;
     height: 280px;
@@ -1007,6 +1167,9 @@ header nav a {
 }
 
 @media screen and (max-width: 980px) {
+  .location-container .description-bottom {
+    width: 900px;
+  }
   .location-container .location-cover {
     width: 900px;
     height: 230px;
@@ -1038,6 +1201,9 @@ header nav a {
 }
 
 @media screen and (max-width: 943px) {
+  .location-container .description-bottom {
+    width: 850px;
+  }
   .location-container .location-cover {
     width: 850px;
     height: 260px;
@@ -1058,6 +1224,10 @@ header nav a {
 }
 
 @media screen and (max-width: 885px) {
+  .location-container .description-bottom {
+    width: 750px;
+    flex-direction: column;
+  }
   .location-container .location-cover {
     width: 750px;
     height: 280px;
@@ -1092,6 +1262,9 @@ header nav a {
 }
 
 @media screen and (max-width: 780px) {
+  .location-container .description-bottom {
+    width: 650px;
+  }
   .location-container .location-cover {
     width: 650px;
     height: 300px;
@@ -1116,6 +1289,9 @@ header nav a {
 }
 
 @media screen and (max-width: 680px) {
+  .location-container .description-bottom {
+    width: 600px;
+  }
   .location-container .location-cover {
     width: 600px;
     height: 310px;
@@ -1161,6 +1337,9 @@ header nav a {
 }
 
 @media screen and (max-width: 631px) {
+  .location-container .description-bottom {
+    width: 500px;
+  }
   .location-container .location-cover {
     width: 500px;
     height: 320px;
@@ -1185,6 +1364,9 @@ header nav a {
 }
 
 @media screen and (max-width: 532px) {
+  .location-container .description-bottom {
+    width: 400px;
+  }
   .location-container .location-cover {
     width: 400px;
     height: 330px;
@@ -1213,6 +1395,9 @@ header nav a {
 }
 
 @media screen and (max-width: 391px) {
+  .location-container .description-bottom {
+    width: 380px;
+  }
   .location-container .location-cover {
     width: 380px;
     height: 330px;
@@ -1237,6 +1422,9 @@ header nav a {
 }
 
 @media screen and (max-width: 351px) {
+  .location-container .description-bottom {
+    width: 400px;
+  }
   .location-container .location-cover {
     width: 400px;
     height: 330px;

@@ -135,6 +135,13 @@ border-radius:100%;
 
 @media screen and (max-width:1294px){
     .location-container {
+        .description-bottom {
+            width: 1140px;
+            display:flex;
+            justify-content: space-between;
+            flex-direction: row;
+            align-items:center;
+         }
         .location-cover  {
             width: 1140px;
             height: 350px;
@@ -168,6 +175,14 @@ border-radius:100%;
 
 @media screen and (max-width:1184px){
     .location-container {
+        .description-bottom {
+            width: 1050px;
+            display:flex;
+            justify-content: space-between;
+            flex-direction: row;
+            align-items:center;
+            
+         }
         .location-cover  {
             width: 1050px;
             height: 300px;
@@ -202,6 +217,13 @@ border-radius:100%;
 
 @media screen and (max-width:1100px){
     .location-container {
+        .description-bottom {
+            width: 950px;
+            display:flex;
+            justify-content: space-between;
+            flex-direction: row;
+            align-items:center;
+         }
         .location-cover  {
             width: 950px;
             height: 280px;
@@ -237,7 +259,9 @@ border-radius:100%;
 
 @media screen and (max-width:980px){
     .location-container {
-    
+    .description-bottom {
+        width: 900px;
+    }
         .location-cover  {
             width: 900px;
             height: 230px;
@@ -272,6 +296,9 @@ border-radius:100%;
 
 @media screen and (max-width:943px){
     .location-container {
+        .description-bottom {
+            width: 850px;
+        }
         .location-cover  {
             width: 850px;
             height: 260px;
@@ -295,6 +322,10 @@ border-radius:100%;
 
 @media screen and (max-width:885px){
     .location-container {
+        .description-bottom {
+            width: 750px;
+            flex-direction: column;
+        }
         .location-cover  {
             width: 750px;
             height: 280px;
@@ -334,6 +365,9 @@ border-radius:100%;
 
 @media screen and (max-width:780px){
     .location-container {
+        .description-bottom {
+            width: 650px;
+        }
         .location-cover  {
             width: 650px;
             height: 300px;
@@ -360,6 +394,9 @@ border-radius:100%;
 
 @media screen and (max-width:680px){
     .location-container {
+        .description-bottom {
+            width: 600px;
+        }
         .location-cover  {
             width: 600px;
             height: 310px;
@@ -409,6 +446,9 @@ border-radius:100%;
 
 @media screen and (max-width:631px){
     .location-container {
+        .description-bottom {
+            width: 500px;
+        }
         .location-cover  {
             width: 500px;
             height: 320px;
@@ -435,6 +475,9 @@ border-radius:100%;
 
 @media screen and (max-width:532px){
     .location-container {
+        .description-bottom {
+            width: 400px;
+        }
         .location-cover  {
             width: 400px;
             height: 330px;
@@ -465,6 +508,9 @@ border-radius:100%;
 
 @media screen and (max-width:391px){
     .location-container {
+        .description-bottom {
+            width: 380px;
+        }
         .location-cover  {
             width: 380px;
             height: 330px;
@@ -493,6 +539,9 @@ height: 255px;
 
 @media screen and (max-width:351px){
     .location-container {
+        .description-bottom {
+            width: 400px;
+        }
         .location-cover  {
             width: 400px;
             height: 330px;
