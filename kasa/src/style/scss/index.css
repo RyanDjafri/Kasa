@@ -577,14 +577,14 @@ header nav a {
 
 @media screen and (max-width: 351px) {
   header {
-    width: 300px;
+    width: 280px;
   }
   header img {
     width: 90px;
     height: 35px;
   }
   header nav a {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
@@ -1253,8 +1253,8 @@ header nav a {
   .location-container .location-description .description-left .location-title {
     font-size: 25px;
   }
-  .location-container .location-description .description-left .location-tags .tag-container {
-    width: 150px;
+  .location-container .location-description .description-left .location-tags {
+    width: 300px;
   }
   .location-container .location-description .location-info {
     justify-content: flex-start;
@@ -1361,6 +1361,10 @@ header nav a {
     width: 500px;
     height: 320px;
   }
+  .location-container .location-description .description-right {
+    width: 600px;
+    margin: 2rem auto;
+  }
 }
 
 @media screen and (max-width: 532px) {
@@ -1389,7 +1393,7 @@ header nav a {
     height: 330px;
   }
   .location-container .location-description .description-right {
-    width: 450px;
+    width: 400px;
     justify-content: space-between;
   }
 }
@@ -1423,10 +1427,10 @@ header nav a {
 
 @media screen and (max-width: 351px) {
   .location-container .description-bottom {
-    width: 400px;
+    width: 280px;
   }
   .location-container .location-cover {
-    width: 400px;
+    width: 280px;
     height: 330px;
     margin: 2rem auto;
   }
@@ -1439,12 +1443,18 @@ header nav a {
     flex-direction: row;
   }
   .location-container .carousel-arrow {
-    width: 30px;
+    width: 25px;
     height: 60px;
   }
   .location-container .carousel-image {
-    width: 335px;
+    width: 280px;
     height: 255px;
+  }
+  .location-container .location-description .description-left .location-tags {
+    width: 280px;
+  }
+  .location-container .location-description .description-left .location-tags .tag-container {
+    width: 100px;
   }
 }
 

@@ -352,8 +352,8 @@ border-radius:100%;
         .location-title {
             font-size:25px;
     }
-    .location-tags .tag-container {
-        width:150px;
+    .location-tags {
+        width:300px;
     }
     }
     .location-info {
@@ -470,6 +470,11 @@ border-radius:100%;
         width: 500px;
         height: 320px;
 }
+
+    }
+    .location-container .location-description .description-right {
+        width: 600px;
+        margin:2rem auto;
     }
 }
 
@@ -501,7 +506,7 @@ border-radius:100%;
 }
     }
     .location-container .location-description .description-right {
-        width: 450px;
+        width: 400px;
         justify-content: space-between;
     }
 }
@@ -540,10 +545,10 @@ height: 255px;
 @media screen and (max-width:351px){
     .location-container {
         .description-bottom {
-            width: 400px;
+            width: 280px;
         }
         .location-cover  {
-            width: 400px;
+            width: 280px;
             height: 330px;
            margin: 2rem auto;
         div {
@@ -556,12 +561,19 @@ height: 255px;
         }
     } 
     .carousel-arrow {
-        width: 30px;
+        width: 25px;
         height: 60px;
     }
     .carousel-image {
-       width: 335px;
-height: 255px;
+       width: 280px;
+       height: 255px;
 }
     }
+    .location-container .location-description .description-left .location-tags {
+        width: 280px;
+    }
+    .location-container .location-description .description-left .location-tags .tag-container {
+        width: 100px;
+    }
 }
+
