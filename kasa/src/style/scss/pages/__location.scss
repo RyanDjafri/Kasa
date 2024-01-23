@@ -545,10 +545,10 @@ height: 255px;
 @media screen and (max-width:351px){
     .location-container {
         .description-bottom {
-            width: 280px;
+            width: 270px;
         }
         .location-cover  {
-            width: 280px;
+            width: 270px;
             height: 330px;
            margin: 2rem auto;
         div {
@@ -565,15 +565,38 @@ height: 255px;
         height: 60px;
     }
     .carousel-image {
-       width: 280px;
+       width: 270px;
        height: 255px;
 }
+    }
+    .location-container .description-right img {
+        width: 32px;
+        height: 32px;
+    }
+    .location-container .description-right {
+        width:280px;
     }
     .location-container .location-description .description-left .location-tags {
         width: 280px;
     }
     .location-container .location-description .description-left .location-tags .tag-container {
         width: 100px;
+    }
+    .location-container .location-description {
+        width: 280px;
+    }
+    .location-container .star img {
+        width: 20px;
+        height: 18px;
+    }
+    .location-container .description-right .location-name {
+        font-size: 12px;
+    }
+    .location-container .location-description .description-left .location-tags .tag-container .location-tag {
+        font-size: 10px;
+    }
+    .location-container .location-description .description-right {
+        width: 280px;
     }
 }
 

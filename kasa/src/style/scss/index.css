@@ -197,10 +197,11 @@ a {
     height: 100%;
   }
   .cards-container {
-    margin: 0;
+    margin: auto;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    background: none;
+    width: 90%;
   }
 }
 
@@ -308,8 +309,8 @@ a {
 
 @media screen and (max-width: 430px) {
   .card {
-    width: 335px;
-    height: 255px;
+    width: 260px;
+    height: 250px;
     flex: 0 1 calc(80% - 2rem);
   }
 }
@@ -771,7 +772,7 @@ header nav a {
     width: 460px;
   }
   .large {
-    width: 460px;
+    width: 335px;
   }
   .div-title {
     font-size: 15px;
@@ -1427,10 +1428,10 @@ header nav a {
 
 @media screen and (max-width: 351px) {
   .location-container .description-bottom {
-    width: 280px;
+    width: 270px;
   }
   .location-container .location-cover {
-    width: 280px;
+    width: 270px;
     height: 330px;
     margin: 2rem auto;
   }
@@ -1447,14 +1448,37 @@ header nav a {
     height: 60px;
   }
   .location-container .carousel-image {
-    width: 280px;
+    width: 270px;
     height: 255px;
+  }
+  .location-container .description-right img {
+    width: 32px;
+    height: 32px;
+  }
+  .location-container .description-right {
+    width: 280px;
   }
   .location-container .location-description .description-left .location-tags {
     width: 280px;
   }
   .location-container .location-description .description-left .location-tags .tag-container {
     width: 100px;
+  }
+  .location-container .location-description {
+    width: 280px;
+  }
+  .location-container .star img {
+    width: 20px;
+    height: 18px;
+  }
+  .location-container .description-right .location-name {
+    font-size: 12px;
+  }
+  .location-container .location-description .description-left .location-tags .tag-container .location-tag {
+    font-size: 10px;
+  }
+  .location-container .location-description .description-right {
+    width: 280px;
   }
 }
 
