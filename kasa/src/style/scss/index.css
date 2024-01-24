@@ -246,6 +246,39 @@ a {
   line-height: 142.6%;
 }
 
+@media screen and (max-width: 610px) {
+  .error-container h1 {
+    font-size: 200px;
+  }
+}
+
+@media screen and (max-width: 424px) {
+  .error-container h1 {
+    font-size: 160px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .error-container h1 {
+    font-size: 140px;
+  }
+  .error-container h3 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 297px) {
+  .error-container h1 {
+    font-size: 120px;
+  }
+  .error-container h3 {
+    font-size: 25px;
+  }
+  .error-container a {
+    font-size: 15px;
+  }
+}
+
 .card {
   width: 340px;
   height: 340px;
@@ -1423,6 +1456,11 @@ header nav a {
   .location-container .carousel-image {
     width: 380px;
     height: 255px;
+  }
+  .location-container .location-description .description-right {
+    width: 420px;
+    margin: 0;
+    justify-content: space-between;
   }
 }
 
