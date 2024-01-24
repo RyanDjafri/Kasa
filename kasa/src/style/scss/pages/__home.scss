@@ -169,6 +169,12 @@
       height:100%;
     }
   }
+  .cards-container {
+    margin:auto;
+    align-items:center;
+    justify-content: center;
+    background:none;
+  }
 }
 
 @media screen and (max-width:351px){
