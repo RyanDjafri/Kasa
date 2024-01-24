@@ -539,9 +539,15 @@ height: 255px;
 }
     }
     .location-container .location-description .description-right {
-        width: 420px;
+        width: 440px;
         margin:0;
         justify-content: space-between;
+    }
+    .location-container .location-description .description-left .location-title {
+        font-size: 18px;
+    }
+    .location-container .location-description .description-left .location-tags .tag-container .location-tag {
+        font-size: 12px;
     }
 }
 
@@ -595,13 +601,16 @@ height: 255px;
         height: 18px;
     }
     .location-container .description-right .location-name {
-        font-size: 12px;
+        font-size: 11px;
     }
     .location-container .location-description .description-left .location-tags .tag-container .location-tag {
         font-size: 10px;
     }
     .location-container .location-description .description-right {
         width: 280px;
+    }
+    .location-container .location-description .description-left .location-tags .tag-container {
+        width: 200px;
     }
 }
 
