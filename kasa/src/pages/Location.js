@@ -6,6 +6,7 @@ import Star from "../components/Star";
 import CardComponent from "../components/CardComponent";
 import Carousel from "../components/Carousel";
 import Footer from "../components/Footer";
+import Tags from "../components/Tags";
 
 const Location = () => {
   const { id } = useParams();
@@ -19,7 +20,6 @@ const Location = () => {
       if (!id) {
         navigate("*");
       } else if (prevIdRef.current !== null && prevIdRef.current !== id) {
-        // Additional logic if needed when 'id' changes
       }
       prevIdRef.current = id;
     };
@@ -28,14 +28,13 @@ const Location = () => {
   }, [id, navigate]);
 
   useEffect(() => {
-    // Check if 'location' or 'location.pictures' is falsy and navigate to "/404"
     if (!location || !location.pictures) {
       navigate("/*");
     }
   }, [location, navigate]);
 
   if (!location) {
-    return null; // Or handle loading state, redirect, or other logic
+    return null;
   }
   return (
     <div>
@@ -50,11 +49,7 @@ const Location = () => {
             <h3 className="location-area">{location.location}</h3>
             <div className="location-tags">
               {location.tags &&
-                location.tags.map((tag) => (
-                  <div key={tag} className="tag-container">
-                    <h3 className="location-tag">{tag}</h3>
-                  </div>
-                ))}
+                location.tags.map((tag) => <Tags key={tag} tag={tag} />)}
             </div>
           </div>
           <div className="description-right">
