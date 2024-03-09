@@ -309,6 +309,7 @@ a {
   font-style: normal;
   font-weight: 500;
   line-height: 142.6%;
+  text-shadow: 2px 2px 4px black;
 }
 
 @media screen and (max-width: 1320px) {
@@ -1153,6 +1154,9 @@ header nav a {
   .location-container .star img {
     width: 35px;
     height: 35px;
+  }
+  .hidden {
+    display: none;
   }
 }
 
