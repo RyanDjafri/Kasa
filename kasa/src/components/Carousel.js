@@ -36,7 +36,7 @@ const Carousel = ({ pictures }) => {
       ) : (
         <img
           src={pictures[0]}
-          alt={`carousel-image-0`}
+          alt={`carousel-image-1`}
           className="carousel-image"
         />
       )}
