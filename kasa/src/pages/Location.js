@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { useParams } from "react-router-dom";
+import React, { useEffect, useRef, useState } from "react";
+import { useNavigate, useParams } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import data from "../logements.json";
 import Star from "../components/Star";
@@ -11,6 +11,32 @@ const Location = () => {
   const { id } = useParams();
   const [locations, setLocations] = useState(data);
   const location = locations.find((loc) => loc.id === id);
+  const navigate = useNavigate();
+  const prevIdRef = useRef(null);
+
+  useEffect(() => {
+    const checkId = () => {
+      if (!id) {
+        navigate("*");
+      } else if (prevIdRef.current !== null && prevIdRef.current !== id) {
+        // Additional logic if needed when 'id' changes
+      }
+      prevIdRef.current = id;
+    };
+
+    checkId();
+  }, [id, navigate]);
+
+  useEffect(() => {
+    // Check if 'location' or 'location.pictures' is falsy and navigate to "/404"
+    if (!location || !location.pictures) {
+      navigate("/*");
+    }
+  }, [location, navigate]);
+
+  if (!location) {
+    return null; // Or handle loading state, redirect, or other logic
+  }
   return (
     <div>
       <Navbar />
