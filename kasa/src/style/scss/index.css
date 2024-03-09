@@ -952,6 +952,17 @@ header nav a {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
+  position: relative;
+}
+
+.location-container .location-cover div .counter {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+  text-shadow: 2px 2px 4px black;
 }
 
 .location-container .location-description {

@@ -32,7 +32,6 @@ const Carousel = ({ pictures }) => {
             className="carousel-image"
           />
           <Right className="carousel-arrow right" onClick={goToNext} />
-          <p className="counter">{currentIndex + 1 + "/" + pictures.length}</p>
         </>
       ) : (
         <img
@@ -41,6 +40,7 @@ const Carousel = ({ pictures }) => {
           className="carousel-image"
         />
       )}
+      <p className="counter">{currentIndex + 1 + "/" + pictures.length}</p>
     </div>
   );
 };
