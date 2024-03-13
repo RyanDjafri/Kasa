@@ -704,9 +704,9 @@ header nav a {
   }
 }
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 884px) {
   .medium {
-    width: 350px;
+    width: 750px;
   }
   .large {
     width: 750px;
@@ -1280,11 +1280,14 @@ header nav a {
   .location-container .location-description .description-left .location-title {
     font-size: 25px;
   }
-  .location-container .location-description .description-left .location-tags {
-    width: 300px;
+  .location-container .location-description .description-left .location-tag {
+    height: 20px;
   }
   .location-container .location-description .location-info {
     justify-content: flex-start;
+  }
+  .counter {
+    display: none;
   }
 }
 

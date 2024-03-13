@@ -365,14 +365,17 @@ border-radius:100%;
         .location-title {
             font-size:25px;
     }
-    .location-tags {
-        width:300px;
+    .location-tag{
+        height:20px;
     }
     }
     .location-info {
             justify-content: flex-start;
     }
 }
+    }
+      .counter {
+        display:none;
     }
 }
 
