@@ -72,6 +72,7 @@
 
 @media screen and (max-width: 730px) {
   .cards-container {
+    margin:2rem auto;
     align-items: center;
     justify-content: center;
     width: 600px;
@@ -99,6 +100,7 @@
     justify-content: center;
     width: 550px;
     padding: 5px;
+    margin:2rem auto;
   }
 
   .bg-container {
@@ -121,6 +123,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
+    margin:2rem auto;
   }
 
   .bg-container {
@@ -150,6 +153,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
+    margin:2rem auto;
   }
 
   .bg-container {
@@ -170,13 +174,12 @@
 
 @media screen and (max-width: 376px) {
   .bg-container {
-    margin: 2rem auto;
     width: 100%;
     height: 100px;
+    transform: translateX(-50%);
     img {
       position: relative;
       right:50%;
-      transform: translateX(-40%);
       object-fit: cover;
       width: 90%;
       height: 100%;

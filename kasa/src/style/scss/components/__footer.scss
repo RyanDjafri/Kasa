@@ -59,12 +59,11 @@ footer {
         footer {
             display: flex;
             width: 100%;
-            height: 159px;
+            height: 45%;
             padding:0;
             flex-direction: column;
             justify-content:center;
             align-items: center;
-            gap: 10px;
             background: #000;
             }
             .text {
@@ -80,12 +79,10 @@ footer {
     @media screen and (max-width:380px){
         footer {
             display: flex;
-    width: 375px;
-    height: 209px;
-    padding: 66px 120.313px 58px 121.094px;
+    width: 100%;
+    height: 100vh;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    gap: -0.444px;
         }
     }

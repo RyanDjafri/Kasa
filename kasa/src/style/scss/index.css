@@ -81,6 +81,7 @@ a {
 
 @media screen and (max-width: 730px) {
   .cards-container {
+    margin: 2rem auto;
     align-items: center;
     justify-content: center;
     width: 600px;
@@ -107,6 +108,7 @@ a {
     justify-content: center;
     width: 550px;
     padding: 5px;
+    margin: 2rem auto;
   }
   .bg-container {
     margin: 2rem auto;
@@ -128,6 +130,7 @@ a {
     align-items: center;
     justify-content: center;
     width: 100%;
+    margin: 2rem auto;
   }
   .bg-container {
     margin: 2rem auto;
@@ -155,6 +158,7 @@ a {
     align-items: center;
     justify-content: center;
     width: 100%;
+    margin: 2rem auto;
   }
   .bg-container {
     margin: 2rem auto;
@@ -173,14 +177,13 @@ a {
 
 @media screen and (max-width: 376px) {
   .bg-container {
-    margin: 2rem auto;
     width: 100%;
     height: 100px;
+    transform: translateX(-50%);
   }
   .bg-container img {
     position: relative;
     right: 50%;
-    transform: translateX(-40%);
     object-fit: cover;
     width: 90%;
     height: 100%;
@@ -311,7 +314,56 @@ a {
   position: relative;
   transform: translateY(-110%);
   color: #FFF;
-  font: 500 18px/142.6% "Montserrat", sans-serif;
+  font-family: "Montserrat",sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.6%;
+  text-shadow: 2px 2px 4px black;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 100%;
+    flex: 0 1 calc(100% - 2rem);
+    width: 340px;
+    height: 340px;
+    flex: 0 1 calc(33.33% - 2rem);
+  }
+  .card .card-title {
+    padding-left: 0.5rem;
+    transform: translateY(0);
+  }
+  .card .card-img {
+    border-radius: 10px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .card .card-title {
+    padding-left: 1rem;
+    position: relative;
+    transform: translateY(-110%);
+    color: #FFF;
+    font-family: "Montserrat",sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142.6%;
+    text-shadow: 2px 2px 4px black;
+  }
+}
+
+@media screen and (max-width: 768px) and (max-width: 768px) {
+  .card {
+    width: 100%;
+    flex: 0 1 calc(100% - 2rem);
+  }
+  .card .card-title {
+    padding-left: 0.5rem;
+    transform: translateY(-110%);
+  }
 }
 
 footer {
@@ -377,12 +429,11 @@ footer .footer-text {
   footer {
     display: flex;
     width: 100%;
-    height: 159px;
+    height: 45%;
     padding: 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
     background: #000;
   }
   .text {
@@ -398,13 +449,11 @@ footer .footer-text {
 @media screen and (max-width: 380px) {
   footer {
     display: flex;
-    width: 375px;
-    height: 209px;
-    padding: 66px 120.313px 58px 121.094px;
+    width: 100%;
+    height: 100vh;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    gap: -0.444px;
   }
 }
 
@@ -1493,12 +1542,15 @@ header nav a {
   }
 }
 
-@media screen and (max-width: 351px) {
+@media screen and (max-width: 376px) {
   .location-container .description-bottom {
     width: 270px;
   }
+  .location-container .location-description .description-right {
+    margin: 2rem auto;
+  }
   .location-container .location-cover {
-    width: 270px;
+    width: 100%;
     height: 330px;
     margin: 2rem auto;
   }
@@ -1515,40 +1567,14 @@ header nav a {
     height: 60px;
   }
   .location-container .carousel-image {
-    width: 270px;
+    position: absolute;
+    left: 5%;
+    width: 100%;
     height: 255px;
   }
-  .location-container .description-right img {
-    width: 32px;
-    height: 32px;
-  }
-  .location-container .description-right {
-    width: 280px;
-  }
-  .location-container .location-description .description-left .location-tags {
-    width: 280px;
-  }
-  .location-container .location-description .description-left .location-tags .tag-container {
-    width: 100px;
-  }
-  .location-container .location-description {
-    width: 280px;
-  }
-  .location-container .star img {
-    width: 20px;
-    height: 18px;
-  }
-  .location-container .description-right .location-name {
-    font-size: 11px;
-  }
-  .location-container .location-description .description-left .location-tags .tag-container .location-tag {
-    font-size: 10px;
-  }
-  .location-container .location-description .description-right {
-    width: 280px;
-  }
-  .location-container .location-description .description-left .location-tags .tag-container {
-    width: 200px;
+  .description-left {
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 }
 

@@ -613,13 +613,16 @@ border-radius:100%;
 
 
 
-@media screen and (max-width:351px){
+@media screen and (max-width:376px){
     .location-container {
         .description-bottom {
             width: 270px;
         }
+        .location-description .description-right {
+            margin:2rem auto;
+        } 
         .location-cover  {
-            width: 270px;
+            width: 100%;
             height: 330px;
            margin: 2rem auto;
         div {
@@ -636,41 +639,17 @@ border-radius:100%;
         height: 60px;
     }
     .carousel-image {
-       width: 270px;
+        position:absolute;
+        left:5%;
+       width:100%;
        height: 255px;
 }
-    }
-    .location-container .description-right img {
-        width: 32px;
-        height: 32px;
-    }
-    .location-container .description-right {
-        width:280px;
-    }
-    .location-container .location-description .description-left .location-tags {
-        width: 280px;
-    }
-    .location-container .location-description .description-left .location-tags .tag-container {
-        width: 100px;
-    }
-    .location-container .location-description {
-        width: 280px;
-    }
-    .location-container .star img {
-        width: 20px;
-        height: 18px;
-    }
-    .location-container .description-right .location-name {
-        font-size: 11px;
-    }
-    .location-container .location-description .description-left .location-tags .tag-container .location-tag {
-        font-size: 10px;
-    }
-    .location-container .location-description .description-right {
-        width: 280px;
-    }
-    .location-container .location-description .description-left .location-tags .tag-container {
-        width: 200px;
-    }
 }
+.description-left {
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+}
+
 
