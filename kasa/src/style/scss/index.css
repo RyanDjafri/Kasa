@@ -26,6 +26,7 @@ a {
 }
 
 .cards-container {
+  width: 1240px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
