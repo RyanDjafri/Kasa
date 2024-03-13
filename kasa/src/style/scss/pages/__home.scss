@@ -1,202 +1,212 @@
 @import "../components/_settings";
+
 .bg-container {
-    width: 1240px;
-    height: 223px;
-    position:relative;
-    left:50%;
-    transform:translateX(-50%);
-    margin-top:2rem;
-    img {
-      object-fit: cover;
-      width:100%;
-      height:100%;
-    }
+  width: 1240px;
+  height: 223px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 2rem;
+
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px; 
   }
-  
+}
+
+.cards-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 3%; 
+  margin: 2rem auto;
+  gap: 2.5rem;
+  border-radius: 25px;
+  background: #F6F6F6;
+}
+
+@media screen and (max-width: 1330px) {
+  .bg-container,
   .cards-container {
-    display: flex;
-    align-items:center;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    padding:46px 40px;
+    width: 1150px;
+  }
+}
+
+@media screen and (max-width: 1286px) {
+  .bg-container,
+  .cards-container {
+    width: 1100px;
+  }
+}
+
+@media screen and (max-width: 1188px) {
+  .bg-container,
+  .cards-container {
+    width: 1100px;
+  }
+}
+
+@media screen and (max-width: 1130px) {
+  .bg-container,
+  .cards-container {
+    width: 900px;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .bg-container,
+  .cards-container {
+    width: 800px;
+  }
+}
+
+@media screen and (max-width: 835px) {
+  .bg-container,
+  .cards-container {
+    width: 700px;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .cards-container {
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    padding: 10px;
+  }
+
+  .bg-container {
     margin: 2rem auto;
-    gap:2.5rem;
-    width: 1340px;
-    border-radius: 25px;
-    background: #F6F6F6;
-  }
-
-
-  @media screen and (max-width:1330px){
-    .bg-container {
-      width: 1150px;
-      height: 260px;
-      img {
-        border-radius:25px;
-      }
-    }
-    .cards-container {
-      width: 1240px;
-    }
-    }
-    @media screen and (max-width:1286px){
-      .bg-container {
-        width: 1100px;
-        height: 250px;
-        img {
-          border-radius:25px;
-        }
-      }
-      .cards-container {
-        width: 1100px;
-      }
-      }
-
-    @media screen and (max-width:1188px){
-      .bg-container {
-        width: 1100px;
-        height: 250px;
-        img {
-          border-radius:25px;
-        }
-      }
-      .cards-container {
-        width: 1100px;
-      }
-      }
-
-    @media screen and (max-width:1130px){
-      .bg-container {
-        width:900px;
-        height: 250px;
-
-      }
-      .cards-container {
-        width: 900px;
-      }
-      }
-      @media screen and (max-width:930px){
-        .bg-container {
-          width:800px;
-          height: 200px;
-          img {
-            object-fit: cover;
-            width:100%;
-            height:100%;
-          }
-        }
-        .cards-container {
-          width: 800px;
-        }
-    }
-    @media screen and (max-width:835px){
-      .bg-container {
-        width:700px;
-        height: 180px;
-        img {
-          object-fit: cover;
-          width:100%;
-          height:100%;
-        }
-      }
-      .cards-container {
-        width: 700px;
-      }
-  }
-
-  
-@media screen and (max-width:730px){
-  .cards-container {
-    align-items:center;
-    justify-content: center;
-    width:600px;
-    padding:10px;
-  }
-  .bg-container {
-     margin:2rem auto;
-    width:900px;
+    width: 900px;
     height: 200px;
     img {
-      position:relative;
-      left:50%;
-      transform:translateX(-50%);
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
       object-fit: cover;
-      width:70%;
-      height:80%;
+      width: 70%;
+      height: 80%;
     }
   }
 }
 
-
-@media screen and (max-width:660px){
+@media screen and (max-width: 660px) {
   .cards-container {
-    align-items:center;
+    align-items: center;
     justify-content: center;
-    width:550px;
-    padding:5px;
+    width: 550px;
+    padding: 5px;
   }
+
   .bg-container {
-     margin:2rem auto;
-    width:750px;
+    margin: 2rem auto;
+    width: 750px;
     height: 200px;
     img {
-      position:relative;
-      left:50%;
-      transform:translateX(-50%);
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
       object-fit: cover;
-      width:70%;
-      height:80%;
+      width: 70%;
+      height: 80%;
     }
   }
 }
 
-@media screen and (max-width:430px){
+@media screen and (max-width: 430px) {
   .cards-container {
-    align-items:center;
+    align-items: center;
     justify-content: center;
-    width:100%;
+    width: 100%;
   }
+
   .bg-container {
-     margin:2rem auto;
-     width: 335px;
-     height: 111px;
+    margin: 2rem auto;
+    width: 335px;
+    height: 111px;
     img {
-      position:relative;
-      left:40%;
-      transform:translateX(-46%);
+      position: relative;
+      left: 40%;
+      transform: translateX(-50%);
       object-fit: cover;
-      width:108%;
-      height:100%;
+      width: 108%;
+      height: 100%;
     }
   }
+
   .cards-container {
-    margin:auto;
-    align-items:center;
+    margin: auto;
+    align-items: center;
     justify-content: center;
-    background:none;
+    background: none;
   }
 }
 
-@media screen and (max-width:351px){
+@media screen and (max-width: 415px) {
+  .cards-container {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
   .bg-container {
-    left:31%;
-    transform:translateX(-25%);
-     margin:2rem auto;
-     width: 90%;
-     height: 90px;
+    margin: 2rem auto;
+    width: 100%;
+    height: 100px;
     img {
-      position:relative;
-      left:35%;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
       object-fit: cover;
-      width:100%;
-      height:100%;
+      width: 90%;
+      height: 100%;
     }
   }
-  .cards-container {
-    margin:auto;
-    align-items:center;
-    justify-content: center;
-    background:none;
-    width:90%;
+}
+
+
+@media screen and (max-width: 376px) {
+  .bg-container {
+    margin: 2rem auto;
+    width: 100%;
+    height: 100px;
+    img {
+      position: relative;
+      right:50%;
+      transform: translateX(-40%);
+      object-fit: cover;
+      width: 90%;
+      height: 100%;
+    }
   }
 }
+
+
+@media screen and (max-width: 351px) {
+  .bg-container {
+    margin: 2rem auto;
+    width: 100%;
+    height: 100px;
+    position:absolute;
+    img {
+      position: relative;
+      right:50%;
+      transform: translateX(-40%);
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .cards-container {
+    margin: 2rem auto;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    width: 100%;
+  }
+}
+
