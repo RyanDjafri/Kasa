@@ -36,6 +36,16 @@ line-height: 142.6%;
 }
 }
 
+@media screen and (max-width:885px){
+    .error-container {
+        h3 {
+           width:80%;
+            text-align: center;
+        }
+    }
+}
+
+
 @media screen and (max-width:610px){
     .error-container {
         h1 {

@@ -12,7 +12,7 @@ header {
       display: flex;
       gap: 2rem; 
       a {
-        color: $pink;
+        color: #FF6060;
         text-align: right;
         font-family: "Montserrat", sans-serif;
         font-size: 24px;
@@ -25,6 +25,7 @@ header {
   .active {
     text-decoration: underline;
   }
+
 
   @media screen and (max-width:1320px){
 header {
@@ -132,6 +133,18 @@ header {
             }
             
             
+            
+            @media screen and (max-width:544px){
+              header {
+                width: 90%;
+                img {
+                  width: 90px;
+                  height: 35px;
+                }
+              }
+              }
+
+
 @media screen and (max-width:430px){
 header {
   width: 335px;

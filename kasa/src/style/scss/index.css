@@ -252,6 +252,13 @@ a {
   line-height: 142.6%;
 }
 
+@media screen and (max-width: 885px) {
+  .error-container h3 {
+    width: 80%;
+    text-align: center;
+  }
+}
+
 @media screen and (max-width: 610px) {
   .error-container h1 {
     font-size: 200px;
@@ -319,7 +326,7 @@ a {
   }
   .card .card-title {
     padding-left: 0.5rem;
-    transform: translateY(0);
+    transform: translateY(-110%);
   }
 }
 
@@ -554,6 +561,16 @@ header nav a {
   }
   img {
     width: 100px;
+    height: 35px;
+  }
+}
+
+@media screen and (max-width: 544px) {
+  header {
+    width: 90%;
+  }
+  header img {
+    width: 90px;
     height: 35px;
   }
 }
