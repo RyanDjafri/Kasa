@@ -598,6 +598,10 @@ border-radius:100%;
         height: 255px;
 }
     }
+    .location-container .location-description .description-left{
+        width: 600px;
+        justify-content: center;
+    }
     .location-container .location-description .description-right {
         width: 400px;
         margin:1rem;
@@ -608,6 +612,14 @@ border-radius:100%;
     }
     .location-container .location-description .description-left .location-tags .tag-container .location-tag {
         font-size: 12px;
+    }
+    .location-container .location-description {
+        width: 600px;
+        align-items: center;
+        justify-content: center;
+    }
+    .location-container .location-description .description-left .location-tags {
+        width:250px;
     }
 }
 
@@ -640,16 +652,10 @@ border-radius:100%;
     }
     .carousel-image {
         position:absolute;
-        left:5%;
        width:100%;
        height: 255px;
 }
 }
-.description-left {
-    justify-content: flex-start;
-    align-items: flex-start;
-}
-
 }
 
 
