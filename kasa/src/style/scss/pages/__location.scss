@@ -551,13 +551,13 @@ border-radius:100%;
     }
     .carousel-image {
         width: 380px;
-height: 255px;
+        height: 255px;
 }
     }
     .location-container .location-description .description-right {
-        width: 440px;
-        margin:0;
-        justify-content: space-between;
+        width: 400px;
+        margin:1rem;
+        justify-content: space-around;
     }
     .location-container .location-description .description-left .location-title {
         font-size: 18px;

@@ -174,9 +174,9 @@ a {
   .bg-container img {
     position: relative;
     left: 40%;
-    transform: translateX(-45%);
+    transform: translateX(-46%);
     object-fit: cover;
-    width: 100%;
+    width: 108%;
     height: 100%;
   }
   .cards-container {
@@ -1454,9 +1454,9 @@ header nav a {
     height: 255px;
   }
   .location-container .location-description .description-right {
-    width: 440px;
-    margin: 0;
-    justify-content: space-between;
+    width: 400px;
+    margin: 1rem;
+    justify-content: space-around;
   }
   .location-container .location-description .description-left .location-title {
     font-size: 18px;
