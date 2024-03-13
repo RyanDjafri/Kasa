@@ -311,23 +311,7 @@ a {
   position: relative;
   transform: translateY(-110%);
   color: #FFF;
-  font-family: "Montserrat",sans-serif;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 142.6%;
-  text-shadow: 2px 2px 4px black;
-}
-
-@media screen and (max-width: 768px) {
-  .card {
-    width: 100%;
-    flex: 0 1 calc(100% - 2rem);
-  }
-  .card .card-title {
-    padding-left: 0.5rem;
-    transform: translateY(-110%);
-  }
+  font: 500 18px/142.6% "Montserrat", sans-serif;
 }
 
 footer {
