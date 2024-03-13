@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import cross from "../assets/cross-up.svg";
 import crossDown from "../assets/cross-down.svg";
 
-const CardComponent = ({ prop }) => {
+const Collapse = ({ prop }) => {
   const [isVisible, setIsVisible] = useState(false);
 
   const toggleVisibilty = () => {
@@ -41,4 +41,4 @@ const CardComponent = ({ prop }) => {
   );
 };
 
-export default CardComponent;
+export default Collapse;

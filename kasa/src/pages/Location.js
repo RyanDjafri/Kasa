@@ -3,7 +3,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import data from "../logements.json";
 import Star from "../components/Star";
-import CardComponent from "../components/CardComponent";
+import Collapse from "../components/Collapse";
 import Carousel from "../components/Carousel";
 import Footer from "../components/Footer";
 import Tags from "../components/Tags";
@@ -66,14 +66,14 @@ const Location = () => {
           </div>
         </div>
         <div className="description-bottom">
-          <CardComponent
+          <Collapse
             prop={{
               title: "Description",
               text: location.description,
               size: "medium",
             }}
           />
-          <CardComponent
+          <Collapse
             prop={{
               title: "Equipements",
               equipments: location.equipments,

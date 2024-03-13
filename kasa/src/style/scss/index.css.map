@@ -9,7 +9,7 @@
         "components/__card.scss",
         "components/__footer.scss",
         "components/__navbar.scss",
-        "components/__cardComponent.scss",
+        "components/_collapse.scss",
         "pages/__location.scss",
         "pages/__about.scss"
     ],

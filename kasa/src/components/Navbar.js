@@ -8,7 +8,7 @@ const Navbar = () => {
       <header>
         <img src={Logo} alt="kasa-logo" />
         <nav>
-          <NavLink to="/">Home</NavLink>
+          <NavLink to="/">Accueil</NavLink>
           <NavLink to="/about">A Propos</NavLink>
         </nav>
       </header>
