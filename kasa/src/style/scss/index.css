@@ -180,13 +180,13 @@ a {
   .bg-container {
     width: 100%;
     height: 100px;
-    transform: translateX(-50%);
+    transform: translateX(-40%);
   }
   .bg-container img {
     position: relative;
-    right: 50%;
+    left: 43%;
     object-fit: cover;
-    width: 90%;
+    width: 100%;
     height: 100%;
   }
 }
@@ -200,8 +200,6 @@ a {
   }
   .bg-container img {
     position: relative;
-    right: 50%;
-    transform: translateX(-40%);
     object-fit: cover;
     width: 100%;
     height: 100%;
@@ -212,6 +210,8 @@ a {
     justify-content: center;
     background: none;
     width: 100%;
+    left: 50%;
+    transform: translateX(-40%);
   }
 }
 
@@ -371,7 +371,8 @@ footer {
   display: flex;
   width: 100%;
   height: 209px;
-  padding: 66px 464px 29px 463px;
+  padding: 0;
+  margin: 0;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
@@ -409,7 +410,6 @@ footer .footer-text {
     display: flex;
     width: 100%;
     height: 159px;
-    padding: 60px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -431,7 +431,26 @@ footer .footer-text {
     display: flex;
     width: 100%;
     height: 45%;
-    padding: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+  }
+  .text {
+    display: flex;
+    width: 413px;
+    height: 40px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 417px) {
+  footer {
+    display: flex;
+    width: 100%;
+    height: 50vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -458,7 +477,18 @@ footer .footer-text {
   footer {
     display: flex;
     width: 100%;
-    height: 40vh;
+    height: 50vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  footer {
+    display: flex;
+    width: 100%;
+    height: 50vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -1469,7 +1499,7 @@ header nav a {
   }
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 417px) {
   .location-container .description-bottom {
     width: 380px;
   }
@@ -1505,7 +1535,12 @@ header nav a {
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
-    margin-left: 2rem;
+    flex-wrap: wrap;
+    margin-left: 1rem;
+  }
+  .description-left .location-tags {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
   .location-container .location-description .description-left .location-title {
     font-size: 18px;
