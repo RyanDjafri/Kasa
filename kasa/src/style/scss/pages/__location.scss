@@ -424,6 +424,26 @@ border-radius:100%;
     }
 
 
-
+    @media screen and (max-width:420px){
+        .location-container .location-cover div {
+            margin:0 1rem;
+            width: 50%;
+            height: 100%;
+            .carousel-image {
+                width: 380px;
+                height: 300px;
+        }
+        }
+        .location-container .location-description .description-left .location-tags .tag-container {
+            width: 100px;
+            height: 30px;
+        }
+        .location-container .right {
+            transform: translateX(-110%);
+        }
+        .location-container .left {
+            transform: translateX(20%);
+        }
+    }
 
 
