@@ -1,7 +1,7 @@
 @import "../components/_settings";
 
 .bg-container {
-  width: 1240px;
+  width: 80%; 
   height: 223px;
   position: relative;
   left: 50%;
@@ -17,201 +17,53 @@
 }
 
 .cards-container {
-  width: 1240px;
+  width: 80%; 
   display: flex;
   align-items: center;
   justify-content: flex-start;
   flex-wrap: wrap;
-  padding: 3%; 
+  padding: 1.21%;
   margin: 2rem auto;
-  gap: 2.5rem;
+  gap: 2rem;
   border-radius: 25px;
   background: #F6F6F6;
 }
 
-@media screen and (max-width: 1330px) {
-  .bg-container,
-  .cards-container {
-    width: 1150px;
-  }
-}
 
-@media screen and (max-width: 1286px) {
-  .bg-container,
-  .cards-container {
-    width: 1100px;
-  }
-}
-
-@media screen and (max-width: 1188px) {
-  .bg-container,
-  .cards-container {
-    width: 1100px;
-  }
-}
-
-@media screen and (max-width: 1130px) {
-  .bg-container,
-  .cards-container {
-    width: 900px;
-  }
-}
-
-@media screen and (max-width: 930px) {
-  .bg-container,
-  .cards-container {
-    width: 800px;
-  }
-}
-
-@media screen and (max-width: 835px) {
-  .bg-container,
-  .cards-container {
-    width: 700px;
-  }
-}
-
-@media screen and (max-width: 730px) {
-  .cards-container {
-    margin:2rem auto;
-    align-items: center;
-    justify-content: center;
-    width: 600px;
-    padding: 10px;
-  }
-
+@media screen and (max-width:955px) {
   .bg-container {
-    margin: 2rem auto;
-    width: 900px;
-    height: 200px;
-    img {
-      position: relative;
-      left: 50%;
-      transform: translateX(-50%);
-      object-fit: cover;
-      width: 70%;
-      height: 80%;
-    }
+    width:80%; 
+    height: 150px;
   }
+  
+  .cards-container {
+    width: 85%; 
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 1.21%;
+    margin: 2rem auto;
+    gap: 2rem;
+    border-radius: 25px;
+    background: #F6F6F6;
+  }
+  
 }
 
-@media screen and (max-width: 660px) {
-  .cards-container {
-    align-items: center;
-    justify-content: center;
-    width: 550px;
-    padding: 5px;
-    margin:2rem auto;
-  }
-
+@media screen and (max-width:617px) {
   .bg-container {
-    margin: 2rem auto;
-    width: 750px;
-    height: 200px;
-    img {
-      position: relative;
-      left: 50%;
-      transform: translateX(-50%);
-      object-fit: cover;
-      width: 70%;
-      height: 80%;
-    }
+    width:80%; 
+    height: 90px;
   }
-}
-
-@media screen and (max-width: 430px) {
-  .cards-container {
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin:2rem auto;
-  }
-
-  .bg-container {
-    margin: 2rem auto;
-    width: 335px;
-    height: 111px;
-    img {
-      position: relative;
-      left: 40%;
-      transform: translateX(-50%);
-      object-fit: cover;
-      width: 108%;
-      height: 100%;
-    }
-  }
-
-  .cards-container {
-    margin: auto;
-    align-items: center;
-    justify-content: center;
+  .cards-container{
+    width:80%;
     background: none;
   }
 }
-
-@media screen and (max-width: 415px) {
-  .cards-container {
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin:2rem auto;
-  }
-
+@media screen and (max-width:384px) {
   .bg-container {
-    margin: 2rem auto;
-    width: 100%;
-    height: 100px;
-    img {
-      position: relative;
-      left: 50%;
-      transform: translateX(-50%);
-      object-fit: cover;
-      width: 90%;
-      height: 100%;
-    }
+    width:80%; 
+    height: 70px;
   }
 }
-
-
-@media screen and (max-width: 376px) {
-  .bg-container {
-    width: 100%;
-    height: 100px;
-    transform: translateX(-40%);
-    img {
-      position: relative;
-      left:40%;
-      object-fit: cover;
-      width: 90%;
-      height: 100%;
-    }
-  }
-}
-
-
-@media screen and (max-width: 351px) {
-  .bg-container {
-    margin: 2rem auto;
-    width: 100%;
-    height: 100px;
-    position:absolute;
-    img {
-      position: relative;
-    
-      object-fit: cover;
-      width: 100%;
-      height: 100%;
-    }
-  }
-
-  .cards-container {
-    margin: 2rem auto;
-    align-items: center;
-    justify-content: center;
-    background: none;
-    width: 100%;
-    left:50%;
-    transform: translateX(-40%);
-  }
-}
-
