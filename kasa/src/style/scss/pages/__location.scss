@@ -345,8 +345,87 @@ border-radius:100%;
                 flex-direction: column;
                 align-items: center;
             }
+            .location-description {
+                display:flex;
+                align-items: flex-start;
+            }
+          .location-description .description-left .location-title {
+            font-size:1.5rem;
+          }
+        }
+        .carousel-arrow {
+            width: 40px;
+            height: 70px;
+        }
+        .location-container .location-description .description-left .location-tags .tag-container {
+            width: 130px;
+            height: 37px;
         }
     }
+
+    @media screen and (max-width:665px){
+        .counter {
+            display:none;
+        }
+        .location-container {
+            .description-bottom {
+                width:90vw;
+                display:flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+            }
+            .location-description {
+                display:flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+            }
+        .description-right {
+            .stars-container {
+                justify-content: flex-start;
+            }
+            .location-info {
+                justify-content: flex-start;
+            }
+        }
+        }
+    }
+
+
+    @media screen and (max-width:458px){
+        .counter {
+            display:none;
+        }
+        .location-container {
+            .description-bottom {
+                width:90vw;
+                display:flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+            }
+            .location-description {
+                display:flex;
+                align-items: flex-start;
+            }
+          .location-description .description-left .location-title {
+            font-size:1.5rem;
+          }
+        }
+        .carousel-arrow {
+            width: 40px;
+            height: 70px;
+        }
+        .location-container .location-description .description-left .location-tags .tag-container {
+            width: 110px;
+            height: 38px;
+        }
+    }
+
+
+
+
 
 // @media screen and (max-width:780px){
 //     .location-container {
