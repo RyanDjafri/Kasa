@@ -22,7 +22,7 @@ const Carousel = ({ pictures }) => {
   }, [pictures]);
 
   return (
-    <div>
+    <div className="carousel-container">
       {pictures.length > 1 ? (
         <>
           <Left className="carousel-arrow left" onClick={goToPrev} />

@@ -877,4 +877,33 @@ header nav a {
   background: #000;
   mix-blend-mode: darken;
 }
+
+.carousel-container {
+  position: relative;
+  width: 1240px;
+  height: 415px;
+  margin: 2rem auto;
+}
+
+.carousel-image {
+  width: 1240px;
+  height: 415px;
+  margin: 2rem auto;
+  border-radius: 25px;
+}
+
+@media screen and (max-width: 875px) {
+  .carousel-container {
+    position: relative;
+    width: 850px;
+    height: 300px;
+    margin: 2rem auto;
+  }
+  .carousel-container .carousel-image {
+    width: 850px;
+    height: 300px;
+    margin: 2rem auto;
+    border-radius: 25px;
+  }
+}
 /*# sourceMappingURL=index.css.map */
