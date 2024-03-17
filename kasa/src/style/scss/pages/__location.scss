@@ -338,6 +338,16 @@ border-radius:100%;
             display:none;
         }
         .location-container {
+            .carousel-image {
+                width: 780px;
+                height: 280px;
+        }
+        .right {
+            transform:translateX(-160%);
+        }
+        .left {
+            transform:translateX(20%);
+        }
             .description-bottom {
                 width:90vw;
                 display:flex;
@@ -354,8 +364,8 @@ border-radius:100%;
           }
         }
         .carousel-arrow {
-            width: 40px;
-            height: 70px;
+            width: 35px;
+            height: 60px;
         }
         .location-container .location-description .description-left .location-tags .tag-container {
             width: 130px;
@@ -363,11 +373,38 @@ border-radius:100%;
         }
     }
 
+@media screen and (max-width:803px){
+    .location-container {        
+        .carousel-image {
+            margin-left:1rem;
+            width: 690px;
+            height: 290px;
+    }
+    .right {   
+             transform:translateX(-340%);
+    }
+    .left {
+        transform:translateX(40%);
+    }
+}
+}
+
+
     @media screen and (max-width:665px){
         .counter {
             display:none;
         }
         .location-container {
+            .carousel-image {
+                width: 700px;
+                height: 280px;
+        }
+        .right {
+            transform:translateX(-160%);
+        }
+        .left {
+            transform:translateX(20%);
+        }
             .description-bottom {
                 width:90vw;
                 display:flex;
@@ -426,7 +463,7 @@ border-radius:100%;
 
     @media screen and (max-width:420px){
         .location-container .location-cover div {
-            margin:0 1rem;
+            margin-left:0;
             width: 50%;
             height: 100%;
             .carousel-image {
@@ -435,14 +472,14 @@ border-radius:100%;
         }
         }
         .location-container .location-description .description-left .location-tags .tag-container {
-            width: 100px;
-            height: 30px;
+            width: 120px;
+            height: 38px;
         }
         .location-container .right {
-            transform: translateX(-110%);
+            transform: translateX(-80%);
         }
         .location-container .left {
-            transform: translateX(20%);
+            transform: translateX(40%);
         }
     }
 
