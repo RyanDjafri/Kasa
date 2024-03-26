@@ -546,105 +546,12 @@ header nav a {
   cursor: pointer;
 }
 
-.medium {
-  width: 582px;
-}
-
 .large {
-  width: 1023px;
+  width: 70vw;
 }
 
-@media screen and (max-width: 1288px) {
-  .medium {
-    width: 500px;
-  }
-}
-
-@media screen and (max-width: 1104px) {
-  .medium {
-    width: 460px;
-  }
-}
-
-@media screen and (max-width: 1063px) {
-  .large {
-    width: 800px;
-  }
-  .medium {
-    width: 440px;
-  }
-}
-
-@media screen and (max-width: 944px) {
-  .medium {
-    width: 420px;
-  }
-}
-
-@media screen and (max-width: 887px) {
-  .medium {
-    width: 90vw;
-  }
-}
-
-@media screen and (max-width: 688px) {
-  .large {
-    width: 500px;
-  }
-  .div-title {
-    font-size: 20px;
-  }
-  .div-text {
-    font-size: 13px;
-  }
-}
-
-@media screen and (max-width: 525px) {
-  .large {
-    width: 400px;
-  }
-  .div-title {
-    font-size: 16px;
-  }
-  .div-text {
-    font-size: 13px;
-  }
-}
-
-@media screen and (max-width: 425px) {
-  .large {
-    width: 350px;
-  }
-  .div-title {
-    font-size: 16px;
-  }
-  .div-text {
-    font-size: 13px;
-  }
-}
-
-@media screen and (max-width: 375px) {
-  .large {
-    width: 300px;
-  }
-  .div-title {
-    font-size: 13px;
-  }
-  .div-text {
-    font-size: 13px;
-  }
-}
-
-@media screen and (max-width: 324px) {
-  .large {
-    width: 250px;
-  }
-  .div-title {
-    font-size: 13px;
-  }
-  .div-text {
-    font-size: 13px;
-  }
+.medium {
+  width: 35vw;
 }
 
 .carousel-container {
@@ -706,11 +613,5 @@ header nav a {
   top: 70%;
   transform: translate(-50%);
   text-shadow: 2px 2px 4px black;
-}
-
-@media screen and (max-width: 573px) {
-  .counter {
-    top: 65%;
-  }
 }
 /*# sourceMappingURL=index.css.map */
