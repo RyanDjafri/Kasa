@@ -7,7 +7,12 @@ const Star = ({ prop }) => {
   return (
     <div className="star">
       {Array.from({ length: rating }).map((_, index) => (
-        <img key={index} src={filledIcon} alt={`star-icon-${index}`} />
+        <img
+          key={index}
+          src={filledIcon}
+          alt={`star-icon-${index}`}
+          className="star-icon"
+        />
       ))}
       {Array.from({ length: 5 - rating }).map((_, index) => (
         <img

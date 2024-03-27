@@ -4,7 +4,6 @@
         height: 60vh;
         margin: 2rem auto;
     }
-
     .location-description {
         width: 80vw;
         margin: 2rem auto;
@@ -16,7 +15,7 @@
             .location-title {
                 color: #FF6060;
                 font-family: "Montserrat", sans-serif;
-                font-size: 36px;
+                font-size: 30px;
                 font-style: normal;
                 font-weight: 500;
                 line-height: 142.6%;
@@ -34,14 +33,11 @@
             .location-tags {
                 display: flex;
                 gap: 1rem;
-                margin: 1rem 0;
+                margin: 2rem auto;
 
                 .tag-container {
-                    width: 115px;
-                    height: 25px;
                     border-radius: 10px;
                     background: #FF6060;
-
                     .location-tag {
                         text-align: center;
                         color: #FFF;
@@ -51,6 +47,8 @@
                         font-style: normal;
                         font-weight: 500;
                         line-height: 142.6%;
+                        width:10vw;
+                        height:4vh;
                     }
                 }
             }
@@ -112,9 +110,27 @@
     }
 
     .star img {
-        width: 54px;
-        height: 36px;
+        width: 2vw; 
+        height:4vh; 
     }
+
+
+@media screen and (max-width:1330px) {
+    .star img {
+        width: 5vw; 
+        height: 3.57vh; 
+    }
+        .location-tags {
+            .tag-container {
+                .location-tag {
+                    width:12vw;
+                    height:6vh;
+                    font-size:12px;
+                }
+            }
+        }
+}
+
 
     @media screen and (max-width:830px) {
         .location-description {
@@ -138,12 +154,12 @@
             justify-content: space-between;
             align-items: space-between;
         }
-
         .star img {
-            width: 54px;
-            height: 36px;
+            width: 40px;
+            height: 30px;
         }
-    }
+        }
+        
 }
 
 @media screen and (max-width:647px) {
@@ -175,9 +191,11 @@
     }
 }
 
-@media screen and(max-width:641px) {
-    .star img {
-        width: 40px;
-        height: 30px;
+
+
+@media screen and(max-width:528px) {
+    .star-icon{
+        width: 10vw;
+        height: 10vh;
     }
 }

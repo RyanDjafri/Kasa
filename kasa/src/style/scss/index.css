@@ -133,7 +133,7 @@ a {
 .location-container .location-description .description-left .location-title {
   color: #FF6060;
   font-family: "Montserrat", sans-serif;
-  font-size: 36px;
+  font-size: 30px;
   font-style: normal;
   font-weight: 500;
   line-height: 142.6%;
@@ -151,12 +151,10 @@ a {
 .location-container .location-description .description-left .location-tags {
   display: flex;
   gap: 1rem;
-  margin: 1rem 0;
+  margin: 2rem auto;
 }
 
 .location-container .location-description .description-left .location-tags .tag-container {
-  width: 115px;
-  height: 25px;
   border-radius: 10px;
   background: #FF6060;
 }
@@ -170,6 +168,8 @@ a {
   font-style: normal;
   font-weight: 500;
   line-height: 142.6%;
+  width: 10vw;
+  height: 4vh;
 }
 
 .location-container .description-right .location-info {
@@ -224,8 +224,20 @@ a {
 }
 
 .location-container .star img {
-  width: 54px;
-  height: 36px;
+  width: 2vw;
+  height: 4vh;
+}
+
+@media screen and (max-width: 1330px) {
+  .location-container .star img {
+    width: 5vw;
+    height: 3.57vh;
+  }
+  .location-container .location-tags .tag-container .location-tag {
+    width: 12vw;
+    height: 6vh;
+    font-size: 12px;
+  }
 }
 
 @media screen and (max-width: 830px) {
@@ -249,8 +261,8 @@ a {
     align-items: space-between;
   }
   .location-container .star img {
-    width: 54px;
-    height: 36px;
+    width: 40px;
+    height: 30px;
   }
 }
 
@@ -280,10 +292,10 @@ a {
   }
 }
 
-@media screen and (max-width: 641px) {
-  .star img {
-    width: 40px;
-    height: 30px;
+@media screen and (max-width: 528px) {
+  .star-icon {
+    width: 10vw;
+    height: 10vh;
   }
 }
 
@@ -340,7 +352,7 @@ a {
 footer {
   display: flex;
   width: 100%;
-  height: 40vh;
+  height: 30vh;
   padding-top: 2rem;
   margin: 0;
   flex-direction: column;
@@ -551,7 +563,7 @@ header nav a {
 }
 
 .medium {
-  width: 35vw;
+  width: 37vw;
 }
 
 .carousel-container {
@@ -571,7 +583,7 @@ header nav a {
 }
 
 .carousel-container .carousel-arrow {
-  width: 80px;
+  width: 100px;
 }
 
 .carousel-container .left {
@@ -585,21 +597,33 @@ header nav a {
 }
 
 @media screen and (max-width: 890px) {
-  .carousel-container .carousel-image {
+  .carousel-image {
     width: 100%;
     height: 100%;
   }
+  .counter {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 875px) {
   .carousel-container .carousel-arrow {
-    width: 100px;
+    width: 120px;
+  }
+  .left {
+    transform: translate(170%);
+  }
+  .right {
+    transform: translate(-170%);
   }
 }
 
 @media screen and (max-width: 573px) {
-  .carousel-container .carousel-image {
+  .carousel-image {
     width: 100%;
     height: 80%;
   }
-  .carousel-container .counter {
+  .counter {
     display: none;
   }
 }
@@ -613,5 +637,28 @@ header nav a {
   top: 70%;
   transform: translate(-50%);
   text-shadow: 2px 2px 4px black;
+}
+
+@media screen and (max-width: 460px) {
+  .location-container .location-cover {
+    margin: 1rem auto;
+  }
+  .carousel-container {
+    width: 80vw;
+    height: 45vh;
+    margin: 1rem auto;
+  }
+  .carousel-container .carousel-arrow {
+    width: 90px;
+    height: 50px;
+  }
+  .carousel-container .left {
+    z-index: 2;
+    left: 60%;
+  }
+  .carousel-container .right {
+    z-index: 2;
+    right: 50%;
+  }
 }
 /*# sourceMappingURL=index.css.map */
