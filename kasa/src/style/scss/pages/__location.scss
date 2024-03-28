@@ -14,7 +14,6 @@
         .description-left {
             .location-title {
                 color: #FF6060;
-                font-family: "Montserrat", sans-serif;
                 font-size: 30px;
                 font-style: normal;
                 font-weight: 500;
@@ -23,7 +22,6 @@
 
             .location-area {
                 color: #FF6060;
-                font-family: "Montserrat", sans-serif;
                 font-size: 18px;
                 font-style: normal;
                 font-weight: 500;
@@ -42,7 +40,6 @@
                         text-align: center;
                         color: #FFF;
                         text-align: center;
-                        font-family: "Montserrat", sans-serif;
                         font-size: 14px;
                         font-style: normal;
                         font-weight: 500;
@@ -73,7 +70,6 @@
             margin: 0 1rem;
             color: #FF6060;
             text-align: right;
-            font-family: "Montserrat", sans-serif;
             font-size: 18px;
             font-style: normal;
             font-weight: 500;
@@ -100,7 +96,6 @@
     .list-item {
         padding-left: 1rem;
         color: #FF6060;
-        font-family: "Montserrat", sans-serif;
         font-size: 16px;
         font-style: normal;
         font-weight: 500;
@@ -158,9 +153,27 @@
             width: 40px;
             height: 30px;
         }
-        }
-        
+        }  
 }
+
+@media screen and (max-width:749px) {
+    .location-container .location-description .description-left .location-tags .tag-container .location-tag {
+        width:14vw;
+        height:6vh;
+        text-align: center;
+        transform: translateY(25%);
+    }
+    .description-bottom
+    .location-container .description-bottom {
+        width: 80vw;
+        margin: 2rem auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+      
 
 @media screen and (max-width:647px) {
     .location-description {

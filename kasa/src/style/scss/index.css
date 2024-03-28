@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
 a {
@@ -81,7 +82,6 @@ a {
   justify-content: center;
   align-items: center;
   color: #ff6060;
-  font-family: "Montserrat", sans-serif;
   font-size: 1.2vw;
   font-style: normal;
   font-weight: 500;
@@ -91,7 +91,6 @@ a {
 .error-container h1 {
   color: #ff6060;
   text-align: center;
-  font-family: "Montserrat", sans-serif;
   font-size: 19vw;
   font-style: normal;
   font-weight: 700;
@@ -100,7 +99,6 @@ a {
 
 .error-container h3 {
   color: #ff6060;
-  font-family: "Montserrat", sans-serif;
   font-size: 2.5vw;
   font-style: normal;
   font-weight: 500;
@@ -109,7 +107,6 @@ a {
 
 .error-container a {
   color: #ff6060;
-  font-family: "Montserrat", sans-serif;
   font-size: 1.2vw;
   font-style: normal;
   font-weight: 500;
@@ -132,7 +129,6 @@ a {
 
 .location-container .location-description .description-left .location-title {
   color: #FF6060;
-  font-family: "Montserrat", sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 500;
@@ -141,7 +137,6 @@ a {
 
 .location-container .location-description .description-left .location-area {
   color: #FF6060;
-  font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -163,7 +158,6 @@ a {
   text-align: center;
   color: #FFF;
   text-align: center;
-  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -189,7 +183,6 @@ a {
   margin: 0 1rem;
   color: #FF6060;
   text-align: right;
-  font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -214,7 +207,6 @@ a {
 .location-container .list-item {
   padding-left: 1rem;
   color: #FF6060;
-  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -263,6 +255,24 @@ a {
   .location-container .star img {
     width: 40px;
     height: 30px;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .location-container .location-description .description-left .location-tags .tag-container .location-tag {
+    width: 14vw;
+    height: 6vh;
+    text-align: center;
+    transform: translateY(25%);
+  }
+  .description-bottom
+.location-container .description-bottom {
+    width: 80vw;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
   }
 }
 
@@ -327,7 +337,6 @@ a {
   position: relative;
   transform: translateY(-110%);
   color: #FFF;
-  font-family: "Montserrat",sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -379,7 +388,6 @@ footer .text {
 footer .footer-text {
   color: #FFF;
   text-align: center;
-  font-family: " Montserrat", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
@@ -443,7 +451,6 @@ header nav {
 header nav a {
   color: #FF6060;
   text-align: right;
-  font-family: "Montserrat", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
@@ -531,7 +538,6 @@ header nav a {
 
 .div-title {
   color: #FFF;
-  font-family: "Montserrat", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
@@ -541,7 +547,6 @@ header nav a {
 .div-text {
   padding-left: 1rem;
   color: #FF6060;
-  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -630,7 +635,6 @@ header nav a {
 
 .counter {
   color: #fff;
-  font-family: "Montserrat", sans-serif;
   font-size: 24px;
   position: absolute;
   left: 50%;
